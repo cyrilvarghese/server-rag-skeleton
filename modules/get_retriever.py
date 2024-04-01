@@ -10,11 +10,12 @@ from config import DB_NAME
  
 def get_retriever(num_of_results=20):
     try:
-        collection = get_LC_chroma_client.get_collection(name=DB_NAME)
+        LC_chroma_client=get_LC_chroma_client()
+        collection = LC_chroma_client.get()
         print("---from api")
-        print(collection)
+        
         if collection:
-            retriever = get_LC_chroma_client.as_retriever( search_kwargs={"k": num_of_results})
+            retriever = LC_chroma_client.as_retriever( search_kwargs={"k": num_of_results})
             return retriever
     except Exception as e:
         print('Error retrieving documents:', e)

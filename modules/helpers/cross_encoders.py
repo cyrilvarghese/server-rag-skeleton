@@ -4,7 +4,7 @@ import json
 from config import BASE_PATH
 
 # Load the JSON data from the file
-with open(BASE_PATH+'/modules/helpers/tag_description_mapping.json', 'r') as file:
+with open(BASE_PATH+'/uploads/tag_description_mapping.json', 'r') as file:
     tag_descriptions = json.load(file)
 
 

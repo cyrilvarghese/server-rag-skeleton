@@ -23,8 +23,9 @@ async def setup_chroma(is_reset=False):
              print("client Reset ",chroma_client.reset());
         collection = chroma_client.get_or_create_collection(name=DB_NAME)
         print("collection created - count:",collection.count())
-        clear_processed_files()
-        await process_files()
+        if is_reset:
+            clear_processed_files()
+            await process_files()
     except Exception as e:
         print("An error occurred:", str(e))
     
