@@ -1,0 +1,963 @@
+[32mINFO[0m:     [31-03-2024 18:16:28] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [31-03-2024 18:16:28] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [31-03-2024 18:16:28] Starting component System
+[36mDEBUG[0m:    [31-03-2024 18:16:28] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [31-03-2024 18:16:28] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [31-03-2024 18:16:28] Starting component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 18:16:29] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [31-03-2024 18:16:29] Starting component Posthog
+[36mDEBUG[0m:    [31-03-2024 18:16:29] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [31-03-2024 18:16:29] Starting component SegmentAPI
+[32mINFO[0m:     [31-03-2024 18:16:29] Started server process [[36m95398[0m]
+[32mINFO[0m:     [31-03-2024 18:16:29] Waiting for application startup.
+[32mINFO[0m:     [31-03-2024 18:16:29] Application startup complete.
+[32mINFO[0m:     [31-03-2024 18:16:29] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [31-03-2024 19:36:54] 127.0.0.1:34076 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:36:54] 127.0.0.1:34076 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:36:54] 127.0.0.1:34078 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:37:00] 127.0.0.1:34088 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:37:00] 127.0.0.1:34088 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:37:00] 127.0.0.1:34094 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:37:07] 127.0.0.1:58850 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:37:07] 127.0.0.1:58850 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:37:07] 127.0.0.1:58856 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:38:21] 127.0.0.1:51322 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:38:21] 127.0.0.1:51322 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 19:38:21] 127.0.0.1:51332 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:07] 127.0.0.1:44752 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:07] 127.0.0.1:44752 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:07] 127.0.0.1:44756 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:18] 127.0.0.1:55250 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:18] 127.0.0.1:55250 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:18] 127.0.0.1:55256 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:22] 127.0.0.1:55268 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:22] 127.0.0.1:55268 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:22] 127.0.0.1:55280 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:26] 127.0.0.1:33012 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:26] 127.0.0.1:33012 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 20:42:26] 127.0.0.1:33028 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:40:19] 127.0.0.1:39336 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:40:19] 127.0.0.1:39336 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:40:19] 127.0.0.1:39342 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:47:07] 127.0.0.1:50262 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:47:07] 127.0.0.1:50262 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:47:07] 127.0.0.1:50270 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:58:15] 127.0.0.1:44458 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:58:15] 127.0.0.1:44458 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 22:58:15] 127.0.0.1:44466 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:08:03] 127.0.0.1:33528 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:08:03] 127.0.0.1:33528 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:08:03] 127.0.0.1:33532 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:13:58] 127.0.0.1:33934 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:13:58] 127.0.0.1:33934 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:13:58] 127.0.0.1:33936 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:14:30] 127.0.0.1:35406 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:14:30] 127.0.0.1:35406 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:14:30] 127.0.0.1:35412 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:34:56] 127.0.0.1:43292 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:34:56] 127.0.0.1:43292 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:34:56] 127.0.0.1:43294 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:34:57] 127.0.0.1:43294 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:35:27] 127.0.0.1:34006 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [31-03-2024 23:35:27] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [31-03-2024 23:35:27] 127.0.0.1:34006 - "POST /api/v1/collections/d7143d95-0b17-4adf-aa7b-3cf04fcfdd40/upsert HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:39:13] 127.0.0.1:42138 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:39:13] 127.0.0.1:42138 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:39:13] 127.0.0.1:42144 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:39:13] 127.0.0.1:42144 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:39:13] 127.0.0.1:42156 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:39:13] 127.0.0.1:42156 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [31-03-2024 23:39:13] unhandled errors in a TaskGroup (1 sub-exception)
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    return self.receive_nowait()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 82, in catch_exceptions_middleware
+  |     return await call_next(request)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+  |     raise app_exc
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+  |     await self.app(scope, receive_or_disconnect, send_no_error)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    |     return self.receive_nowait()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    |     raise WouldBlock
+    | anyio.WouldBlock
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    |     raise EndOfStream
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 96, in check_http_version_middleware
+    |     return await call_next(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    |     raise e
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    |     response = await func(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 273, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 192, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    |     return await future
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/auth/fastapi.py", line 241, in wrapped
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 603, in reset
+    |     return self._api.reset()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/api/segment.py", line 780, in reset
+    |     self._system.reset_state()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/config.py", line 415, in reset_state
+    |     raise ValueError(
+    | ValueError: Resetting is not allowed by this configuration (to enable it, set `allow_reset` to `True` in your Settings() or include `ALLOW_RESET=TRUE` in your environment variables)
+    +------------------------------------
+[32mINFO[0m:     [31-03-2024 23:39:13] 127.0.0.1:42166 - "POST /api/v1/reset HTTP/1.1" 500
+[32mINFO[0m:     [31-03-2024 23:39:49] 127.0.0.1:48118 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:39:49] 127.0.0.1:48118 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:39:49] 127.0.0.1:48132 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:05] 127.0.0.1:50444 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:05] 127.0.0.1:50444 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:05] 127.0.0.1:50456 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:05] 127.0.0.1:50456 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:54] 127.0.0.1:43572 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:54] 127.0.0.1:43572 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:54] 127.0.0.1:43574 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:54] 127.0.0.1:43574 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:54] 127.0.0.1:43588 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:40:54] 127.0.0.1:43588 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [31-03-2024 23:40:54] unhandled errors in a TaskGroup (1 sub-exception)
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    return self.receive_nowait()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 82, in catch_exceptions_middleware
+  |     return await call_next(request)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+  |     raise app_exc
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+  |     await self.app(scope, receive_or_disconnect, send_no_error)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    |     return self.receive_nowait()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    |     raise WouldBlock
+    | anyio.WouldBlock
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    |     raise EndOfStream
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 96, in check_http_version_middleware
+    |     return await call_next(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    |     raise e
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    |     response = await func(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 273, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 192, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    |     return await future
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/auth/fastapi.py", line 241, in wrapped
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 603, in reset
+    |     return self._api.reset()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/api/segment.py", line 780, in reset
+    |     self._system.reset_state()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/config.py", line 415, in reset_state
+    |     raise ValueError(
+    | ValueError: Resetting is not allowed by this configuration (to enable it, set `allow_reset` to `True` in your Settings() or include `ALLOW_RESET=TRUE` in your environment variables)
+    +------------------------------------
+[32mINFO[0m:     [31-03-2024 23:40:54] 127.0.0.1:43590 - "POST /api/v1/reset HTTP/1.1" 500
+[32mINFO[0m:     [31-03-2024 23:42:41] Shutting down
+[32mINFO[0m:     [31-03-2024 23:42:41] Waiting for application shutdown.
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component System
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component SegmentAPI
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component Posthog
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [31-03-2024 23:42:41] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [31-03-2024 23:42:41] Application shutdown complete.
+[32mINFO[0m:     [31-03-2024 23:42:41] Finished server process [[36m95398[0m]
+[32mINFO[0m:     [31-03-2024 23:42:51] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [31-03-2024 23:42:51] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [31-03-2024 23:42:51] Starting component System
+[36mDEBUG[0m:    [31-03-2024 23:42:51] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [31-03-2024 23:42:51] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [31-03-2024 23:42:51] Starting component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 23:42:51] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [31-03-2024 23:42:51] Starting component Posthog
+[36mDEBUG[0m:    [31-03-2024 23:42:51] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [31-03-2024 23:42:51] Starting component SegmentAPI
+[32mINFO[0m:     [31-03-2024 23:42:51] Started server process [[36m267420[0m]
+[32mINFO[0m:     [31-03-2024 23:42:51] Waiting for application startup.
+[32mINFO[0m:     [31-03-2024 23:42:51] Application startup complete.
+[32mINFO[0m:     [31-03-2024 23:42:51] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [31-03-2024 23:43:10] 127.0.0.1:35214 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:43:10] 127.0.0.1:35214 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:43:10] 127.0.0.1:35216 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:43:10] 127.0.0.1:35216 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:43:10] 127.0.0.1:35224 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:43:10] 127.0.0.1:35224 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [31-03-2024 23:43:10] unhandled errors in a TaskGroup (1 sub-exception)
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    return self.receive_nowait()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 82, in catch_exceptions_middleware
+  |     return await call_next(request)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+  |     raise app_exc
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+  |     await self.app(scope, receive_or_disconnect, send_no_error)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    |     return self.receive_nowait()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    |     raise WouldBlock
+    | anyio.WouldBlock
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    |     raise EndOfStream
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 96, in check_http_version_middleware
+    |     return await call_next(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    |     raise e
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    |     response = await func(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 273, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 192, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    |     return await future
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/auth/fastapi.py", line 241, in wrapped
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 603, in reset
+    |     return self._api.reset()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/api/segment.py", line 780, in reset
+    |     self._system.reset_state()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/config.py", line 415, in reset_state
+    |     raise ValueError(
+    | ValueError: Resetting is not allowed by this configuration (to enable it, set `allow_reset` to `True` in your Settings() or include `ALLOW_RESET=TRUE` in your environment variables)
+    +------------------------------------
+[32mINFO[0m:     [31-03-2024 23:43:10] 127.0.0.1:35240 - "POST /api/v1/reset HTTP/1.1" 500
+[32mINFO[0m:     [31-03-2024 23:46:22] 127.0.0.1:57602 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:22] 127.0.0.1:57602 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:22] 127.0.0.1:57610 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:22] 127.0.0.1:57610 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:23] 127.0.0.1:57622 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:23] 127.0.0.1:57622 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [31-03-2024 23:46:23] unhandled errors in a TaskGroup (1 sub-exception)
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    return self.receive_nowait()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 82, in catch_exceptions_middleware
+  |     return await call_next(request)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+  |     raise app_exc
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+  |     await self.app(scope, receive_or_disconnect, send_no_error)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    |     return self.receive_nowait()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    |     raise WouldBlock
+    | anyio.WouldBlock
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    |     raise EndOfStream
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 96, in check_http_version_middleware
+    |     return await call_next(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    |     raise e
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    |     response = await func(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 273, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 192, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    |     return await future
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/auth/fastapi.py", line 241, in wrapped
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 603, in reset
+    |     return self._api.reset()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/api/segment.py", line 780, in reset
+    |     self._system.reset_state()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/config.py", line 415, in reset_state
+    |     raise ValueError(
+    | ValueError: Resetting is not allowed by this configuration (to enable it, set `allow_reset` to `True` in your Settings() or include `ALLOW_RESET=TRUE` in your environment variables)
+    +------------------------------------
+[32mINFO[0m:     [31-03-2024 23:46:23] 127.0.0.1:57624 - "POST /api/v1/reset HTTP/1.1" 500
+[32mINFO[0m:     [31-03-2024 23:46:45] 127.0.0.1:46314 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:45] 127.0.0.1:46314 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:45] 127.0.0.1:46326 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:45] 127.0.0.1:46326 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:45] 127.0.0.1:46328 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:45] 127.0.0.1:46328 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:56] 127.0.0.1:40226 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:56] 127.0.0.1:40226 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:56] 127.0.0.1:40242 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:56] 127.0.0.1:40242 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:56] 127.0.0.1:40246 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:46:56] 127.0.0.1:40246 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:28] 127.0.0.1:57486 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:28] 127.0.0.1:57486 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:28] 127.0.0.1:57488 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:28] 127.0.0.1:57488 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:34] 127.0.0.1:54358 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:34] 127.0.0.1:54358 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:34] 127.0.0.1:54362 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:35] 127.0.0.1:54362 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:47:43] Shutting down
+[32mINFO[0m:     [31-03-2024 23:47:44] Waiting for application shutdown.
+[36mDEBUG[0m:    [31-03-2024 23:47:44] Stopping component System
+[36mDEBUG[0m:    [31-03-2024 23:47:44] Stopping component SegmentAPI
+[36mDEBUG[0m:    [31-03-2024 23:47:44] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [31-03-2024 23:47:44] Stopping component Posthog
+[36mDEBUG[0m:    [31-03-2024 23:47:44] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [31-03-2024 23:47:44] Stopping component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 23:47:44] Stopping component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [31-03-2024 23:47:44] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [31-03-2024 23:47:44] Application shutdown complete.
+[32mINFO[0m:     [31-03-2024 23:47:44] Finished server process [[36m267420[0m]
+[32mINFO[0m:     [31-03-2024 23:47:55] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [31-03-2024 23:47:55] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [31-03-2024 23:47:55] Starting component System
+[36mDEBUG[0m:    [31-03-2024 23:47:55] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [31-03-2024 23:47:55] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [31-03-2024 23:47:55] Starting component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 23:47:55] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [31-03-2024 23:47:55] Starting component Posthog
+[36mDEBUG[0m:    [31-03-2024 23:47:55] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [31-03-2024 23:47:55] Starting component SegmentAPI
+[32mINFO[0m:     [31-03-2024 23:47:55] Started server process [[36m269103[0m]
+[32mINFO[0m:     [31-03-2024 23:47:55] Waiting for application startup.
+[32mINFO[0m:     [31-03-2024 23:47:55] Application startup complete.
+[32mINFO[0m:     [31-03-2024 23:47:55] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [31-03-2024 23:48:01] 127.0.0.1:39324 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:48:01] 127.0.0.1:39324 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:48:01] 127.0.0.1:39330 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:48:01] 127.0.0.1:39330 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:49:12] 127.0.0.1:43950 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:49:12] 127.0.0.1:43950 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:49:12] 127.0.0.1:43954 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:49:12] 127.0.0.1:43954 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:11] 127.0.0.1:49172 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:11] 127.0.0.1:49172 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:11] 127.0.0.1:49174 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:11] 127.0.0.1:49174 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:15] 127.0.0.1:51310 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:15] 127.0.0.1:51310 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:15] 127.0.0.1:51314 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:15] 127.0.0.1:51314 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:49] 127.0.0.1:33614 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:49] 127.0.0.1:33614 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:49] 127.0.0.1:33620 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:50:49] 127.0.0.1:33620 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:51:43] Shutting down
+[32mINFO[0m:     [31-03-2024 23:51:43] Waiting for application shutdown.
+[36mDEBUG[0m:    [31-03-2024 23:51:43] Stopping component System
+[36mDEBUG[0m:    [31-03-2024 23:51:43] Stopping component SegmentAPI
+[36mDEBUG[0m:    [31-03-2024 23:51:43] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [31-03-2024 23:51:43] Stopping component Posthog
+[36mDEBUG[0m:    [31-03-2024 23:51:43] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [31-03-2024 23:51:43] Stopping component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 23:51:43] Stopping component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [31-03-2024 23:51:43] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [31-03-2024 23:51:43] Application shutdown complete.
+[32mINFO[0m:     [31-03-2024 23:51:43] Finished server process [[36m269103[0m]
+[32mINFO[0m:     [31-03-2024 23:52:30] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [31-03-2024 23:52:30] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [31-03-2024 23:52:30] Starting component System
+[36mDEBUG[0m:    [31-03-2024 23:52:30] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [31-03-2024 23:52:30] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [31-03-2024 23:52:30] Starting component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 23:52:30] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [31-03-2024 23:52:30] Starting component Posthog
+[36mDEBUG[0m:    [31-03-2024 23:52:30] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [31-03-2024 23:52:30] Starting component SegmentAPI
+[32mINFO[0m:     [31-03-2024 23:52:30] Started server process [[36m270774[0m]
+[32mINFO[0m:     [31-03-2024 23:52:30] Waiting for application startup.
+[32mINFO[0m:     [31-03-2024 23:52:30] Application startup complete.
+[32mINFO[0m:     [31-03-2024 23:52:30] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [31-03-2024 23:53:33] 127.0.0.1:55338 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:53:33] 127.0.0.1:55338 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [31-03-2024 23:53:33] unhandled errors in a TaskGroup (1 sub-exception)
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    return self.receive_nowait()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 82, in catch_exceptions_middleware
+  |     return await call_next(request)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+  |     raise app_exc
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+  |     await self.app(scope, receive_or_disconnect, send_no_error)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    |     return self.receive_nowait()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    |     raise WouldBlock
+    | anyio.WouldBlock
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    |     raise EndOfStream
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 96, in check_http_version_middleware
+    |     return await call_next(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    |     raise e
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    |     response = await func(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 273, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 192, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    |     return await future
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/auth/fastapi.py", line 241, in wrapped
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 440, in get_collection
+    |     return self._api.get_collection(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/api/segment.py", line 261, in get_collection
+    |     raise ValueError(f"Collection {name} does not exist.")
+    | ValueError: Collection internal-document-store does not exist.
+    +------------------------------------
+[32mINFO[0m:     [31-03-2024 23:53:33] 127.0.0.1:55346 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [31-03-2024 23:55:10] 127.0.0.1:49376 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:55:10] 127.0.0.1:49376 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [31-03-2024 23:55:10] unhandled errors in a TaskGroup (1 sub-exception)
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    return self.receive_nowait()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 82, in catch_exceptions_middleware
+  |     return await call_next(request)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+  |     raise app_exc
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+  |     await self.app(scope, receive_or_disconnect, send_no_error)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    |     return self.receive_nowait()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    |     raise WouldBlock
+    | anyio.WouldBlock
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    |     raise EndOfStream
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 96, in check_http_version_middleware
+    |     return await call_next(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    |     raise e
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    |     response = await func(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 273, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 192, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    |     return await future
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/auth/fastapi.py", line 241, in wrapped
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 440, in get_collection
+    |     return self._api.get_collection(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/api/segment.py", line 261, in get_collection
+    |     raise ValueError(f"Collection {name} does not exist.")
+    | ValueError: Collection internal-document-store does not exist.
+    +------------------------------------
+[32mINFO[0m:     [31-03-2024 23:55:10] 127.0.0.1:49378 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [31-03-2024 23:55:17] 127.0.0.1:60396 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:55:17] 127.0.0.1:60396 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[31mERROR[0m:    [31-03-2024 23:55:17] unhandled errors in a TaskGroup (1 sub-exception)
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    return self.receive_nowait()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    message = await recv_stream.receive()
+  File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    raise EndOfStream
+anyio.EndOfStream
+
+During handling of the above exception, another exception occurred:
+
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 82, in catch_exceptions_middleware
+  |     return await call_next(request)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+  |     raise app_exc
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+  |     await self.app(scope, receive_or_disconnect, send_no_error)
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 106, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 97, in receive
+    |     return self.receive_nowait()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 92, in receive_nowait
+    |     raise WouldBlock
+    | anyio.WouldBlock
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 78, in call_next
+    |     message = await recv_stream.receive()
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/streams/memory.py", line 112, in receive
+    |     raise EndOfStream
+    | anyio.EndOfStream
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 108, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 96, in check_http_version_middleware
+    |     return await call_next(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 84, in call_next
+    |     raise app_exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/base.py", line 70, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    |     raise exc
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    |     await self.app(scope, receive, sender)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    |     raise e
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 718, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 276, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/routing.py", line 66, in app
+    |     response = await func(request)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 273, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/fastapi/routing.py", line 192, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 2144, in run_sync_in_worker_thread
+    |     return await future
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/anyio/_backends/_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/auth/fastapi.py", line 241, in wrapped
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/server/fastapi/__init__.py", line 440, in get_collection
+    |     return self._api.get_collection(
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/telemetry/opentelemetry/__init__.py", line 127, in wrapper
+    |     return f(*args, **kwargs)
+    |   File "/home/cyrilvarghese/miniforge3/lib/python3.10/site-packages/chromadb/api/segment.py", line 261, in get_collection
+    |     raise ValueError(f"Collection {name} does not exist.")
+    | ValueError: Collection internal-document-store does not exist.
+    +------------------------------------
+[32mINFO[0m:     [31-03-2024 23:55:17] 127.0.0.1:60402 - "GET /api/v1/collections/internal-document-store?tenant=default_tenant&database=default_database HTTP/1.1" 500
+[32mINFO[0m:     [31-03-2024 23:56:44] 127.0.0.1:53114 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:56:44] 127.0.0.1:53114 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [31-03-2024 23:56:44] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [31-03-2024 23:56:44] Resetting component Posthog
+[36mDEBUG[0m:    [31-03-2024 23:56:44] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [31-03-2024 23:56:44] Starting component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 23:56:45] Resetting component SqliteDB
+[36mDEBUG[0m:    [31-03-2024 23:56:45] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [31-03-2024 23:56:45] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [31-03-2024 23:56:45] 127.0.0.1:53124 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:56:45] 127.0.0.1:53124 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [31-03-2024 23:56:45] 127.0.0.1:53124 - "GET /api/v1/collections/3d71a4a6-3809-4c21-9ba4-8bf5203b8214/count HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:05:04] 127.0.0.1:54604 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:05:04] 127.0.0.1:54604 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [01-04-2024 00:05:04] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [01-04-2024 00:05:04] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [01-04-2024 00:05:04] Resetting component Posthog
+[36mDEBUG[0m:    [01-04-2024 00:05:04] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [01-04-2024 00:05:04] Starting component SqliteDB
+[36mDEBUG[0m:    [01-04-2024 00:05:05] Resetting component SqliteDB
+[36mDEBUG[0m:    [01-04-2024 00:05:05] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [01-04-2024 00:05:05] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [01-04-2024 00:05:05] 127.0.0.1:54614 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:05:05] 127.0.0.1:54614 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:05:05] 127.0.0.1:54614 - "GET /api/v1/collections/d7a0c712-c8cb-436d-81b9-2cc77eaa99bc/count HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:05:09] 127.0.0.1:54622 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:05:09] 127.0.0.1:54622 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [01-04-2024 00:05:09] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [01-04-2024 00:05:09] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [01-04-2024 00:05:09] Resetting component Posthog
+[36mDEBUG[0m:    [01-04-2024 00:05:09] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [01-04-2024 00:05:09] Starting component SqliteDB
+[36mDEBUG[0m:    [01-04-2024 00:05:09] Resetting component SqliteDB
+[36mDEBUG[0m:    [01-04-2024 00:05:09] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [01-04-2024 00:05:09] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [01-04-2024 00:05:09] 127.0.0.1:54638 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:05:09] 127.0.0.1:54638 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:05:09] 127.0.0.1:54638 - "GET /api/v1/collections/3cf40ab1-efe5-456e-ad33-291dde83ffe5/count HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:06:14] 127.0.0.1:46656 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:06:14] 127.0.0.1:46656 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:06:14] 127.0.0.1:46666 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 00:06:16] 127.0.0.1:46666 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [01-04-2024 00:06:16] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [01-04-2024 00:06:16] 127.0.0.1:46666 - "POST /api/v1/collections/3cf40ab1-efe5-456e-ad33-291dde83ffe5/upsert HTTP/1.1" 200
+[32mINFO[0m:     [01-04-2024 08:40:15] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [01-04-2024 08:40:15] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [01-04-2024 08:40:15] Starting component System
+[36mDEBUG[0m:    [01-04-2024 08:40:15] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [01-04-2024 08:40:15] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [01-04-2024 08:40:15] Starting component SqliteDB
+[36mDEBUG[0m:    [01-04-2024 08:40:15] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [01-04-2024 08:40:15] Starting component Posthog
+[36mDEBUG[0m:    [01-04-2024 08:40:15] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [01-04-2024 08:40:15] Starting component SegmentAPI
+[32mINFO[0m:     [01-04-2024 08:40:15] Started server process [[36m1847[0m]
+[32mINFO[0m:     [01-04-2024 08:40:15] Waiting for application startup.
+[32mINFO[0m:     [01-04-2024 08:40:15] Application startup complete.
+[32mINFO[0m:     [01-04-2024 08:40:15] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)

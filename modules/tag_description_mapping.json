@@ -1,0 +1,22 @@
+[
+    {
+        "tag_name": "financial-performance",
+        "tag_description": "Encompasses all aspects related to the company's financial health, including revenue growth, expense management, and net income."
+    },
+    {
+        "tag_name": "strategic-initiatives",
+        "tag_description": "Covers the company's strategic moves like product line expansion, digital transformation initiatives, and market penetration strategies."
+    },
+    {
+        "tag_name": "operational-efficiency",
+        "tag_description": "Includes discussions on operational costs, efficiency improvements, and the impact of investments in technology and processes on overall company operations."
+    },
+    {
+        "tag_name": "market-insights",
+        "tag_description": "Pertains to analyses related to market trends, customer behavior, and competitive landscape that inform the company's strategic decisions."
+    },
+    {
+        "tag_name": "confidential-strategies",
+        "tag_description": "Reserved for sensitive information such as executive compensation, mergers and acquisitions strategy, and other strategic information that requires limited access."
+    }
+]
