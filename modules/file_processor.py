@@ -6,9 +6,10 @@ from  langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
 import chromadb
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from config import CHUNK_SIZE
+from config import CHUNK_SIZE,UPLOADS_FOLDER
 from modules.db import get_LC_chroma_client
-
+from modules.helpers.cross_encoders import get_relevant_tags
+from datetime import datetime
  
 # Initialize list to store documents
 documents = []
@@ -20,7 +21,7 @@ splitter =  RecursiveCharacterTextSplitter(
 
 
 
-async def process_files(folder_path="../server/uploads", processed_files_path="../server/utils/processed_files.txt"):
+async def process_files(folder_path=UPLOADS_FOLDER, processed_files_path="../server/utils/processed_files.txt"):
     try:
         # Read the list of processed files
         processed_files = read_processed_files(processed_files_path)
@@ -51,7 +52,14 @@ async def process_files(folder_path="../server/uploads", processed_files_path=".
         docs_to_index = []
         for array in documents:
             docs_to_index.extend(array)
- 
+      
+    #   adding meta info for querying 
+        for doc in docs_to_index:
+            tags = get_relevant_tags(doc.page_content)
+            # Update doc metadata with URL source
+            doc.metadata['tags'] = tags
+            doc.metadata['created_at'] =  datetime.now().isoformat()
+            doc.metadata['updated_at'] =  datetime.now().isoformat()
          
             
         print("Document count:", len(docs_to_index))

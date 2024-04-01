@@ -5,7 +5,7 @@ from fastapi import APIRouter, File, UploadFile, Form, HTTPException
 from typing import List
 import json
 from modules.file_processor import process_files
-
+from config import UPLOADS_FOLDER
 upload_router = APIRouter()
  
 
@@ -18,7 +18,7 @@ async def upload_pdfs(pdf_files: list[UploadFile] = File(...)):
         if not pdf_file.filename.endswith('.pdf'):
             return {"error": "Only PDF files are allowed."}
         # Specify the directory where files will be saved
-        upload_folder = "../server/uploads"
+        upload_folder = UPLOADS_FOLDER
         os.makedirs(upload_folder, exist_ok=True)  # Create the directory if it doesn't exist
         
         # Save the PDF file to the specified directory
