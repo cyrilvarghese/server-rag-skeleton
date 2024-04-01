@@ -38,7 +38,8 @@ def get_relevant_tags(document:str):
     # Initialize an empty list to hold the tag_names
 
     relevant_tags = get_with_threshold(sorted_tags)
-    return relevant_tags
+    relevant_tags_str = json.dumps(relevant_tags)
+    return relevant_tags_str
 
 
 def get_with_threshold(data, threshold_value=3):
