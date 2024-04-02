@@ -2601,3 +2601,17 @@ During handling of the above exception, another exception occurred:
 [32mINFO[0m:     [01-04-2024 23:16:28] 127.0.0.1:37834 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
 [32mINFO[0m:     [01-04-2024 23:16:28] 127.0.0.1:37834 - "POST /api/v1/collections/483bd5a3-172f-4c6f-a566-2f8671c2df0f/get HTTP/1.1" 200
 [32mINFO[0m:     [01-04-2024 23:16:29] 127.0.0.1:37834 - "POST /api/v1/collections/483bd5a3-172f-4c6f-a566-2f8671c2df0f/query HTTP/1.1" 200
+[32mINFO[0m:     [02-04-2024 21:02:13] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [02-04-2024 21:02:13] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [02-04-2024 21:02:13] Starting component System
+[36mDEBUG[0m:    [02-04-2024 21:02:13] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [02-04-2024 21:02:13] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [02-04-2024 21:02:13] Starting component SqliteDB
+[36mDEBUG[0m:    [02-04-2024 21:02:13] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [02-04-2024 21:02:13] Starting component Posthog
+[36mDEBUG[0m:    [02-04-2024 21:02:13] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [02-04-2024 21:02:13] Starting component SegmentAPI
+[32mINFO[0m:     [02-04-2024 21:02:14] Started server process [[36m1360[0m]
+[32mINFO[0m:     [02-04-2024 21:02:14] Waiting for application startup.
+[32mINFO[0m:     [02-04-2024 21:02:14] Application startup complete.
+[32mINFO[0m:     [02-04-2024 21:02:14] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)

@@ -56,7 +56,7 @@ async def process_files(folder_path=UPLOADS_FOLDER, processed_files_path="../ser
     #   adding meta info for querying 
         for doc in docs_to_index:
             tags = get_relevant_tags(doc.page_content)
-            # Update doc metadata with URL source
+            # Update doc metadata with tags
             doc.metadata['tags'] = tags
             doc.metadata['created_at'] =  datetime.now().isoformat()
             doc.metadata['updated_at'] =  datetime.now().isoformat()
