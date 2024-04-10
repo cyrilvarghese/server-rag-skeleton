@@ -6,6 +6,10 @@ from modules.routers.query_router import query_router
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from config import BASE_PATH
+from modules.routers.qq_LLM_router import qq_LLM_router
+from sqlite_apis.tags_router import tags_router
+from sqlite_apis.projects_router import projects_router
+from sqlite_apis.jobs_router import jobs_router
 app = FastAPI()
 # Add middleware to the app
 
@@ -27,6 +31,10 @@ async def startup_event():
 app.include_router(query_router, prefix="/api/query")
 app.include_router(upload_router, prefix="/api/upload")
 app.include_router(files_router, prefix="/api/files")
+app.include_router(tags_router, prefix="/api/data")
+app.include_router(qq_LLM_router, prefix="/api/data")
+app.include_router(projects_router, prefix="/api/projects")
+app.include_router(jobs_router, prefix="/api/jobs")
 
 @app.get("/")
 async def read_root():
