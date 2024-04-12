@@ -31,7 +31,7 @@ class ProjectCreate(BaseModel):
 
  
  # Pydantic models for serialization
-class File(BaseModel):
+class UploadedFile(BaseModel):
     id: int
     name: str
     created_at: str
@@ -41,4 +41,11 @@ class JobDetails(BaseModel):
     name: str
     project_id: int
     tags: List[Tag]
-    files: List[File]
+    files: List[UploadedFile]
+
+
+class Role(BaseModel):
+    id: int
+    name: str
+    description: str
+    allowed_tags: List[Tag]

@@ -2,9 +2,9 @@ from fastapi import APIRouter, HTTPException,status,Depends
 import asyncio
 import sqlite3
  
-from typing import List, Optional, Annotated
+from typing import Any, Dict, List, Optional, Annotated
 from pydantic import BaseModel, Field
-from sqlite_apis.data.model import File, Job, JobDetails, Project, ProjectCreate, Tag
+from sqlite_apis.data.model import UploadedFile, Job, JobDetails, Project, ProjectCreate, Tag
  
 projects_router = APIRouter();
 
@@ -106,7 +106,7 @@ async def delete_project(project_id: int):
     conn.close()
     return {"message": "Project deleted successfully"}
 
-
+ 
 @projects_router.get("/{project_id}/jobs/{job_id}", response_model=JobDetails)
 def get_job_by_id(job_id: int):
     conn = get_db_connection()
@@ -141,10 +141,10 @@ def get_job_by_id(job_id: int):
         name=job['name'],
         project_id=job['project_id'],
         tags=[Tag(id=tag['id'], name=tag['name'], description=tag['description'], color=tag['color']) for tag in tags],
-        files=[File(id=file['id'], name=file['name'],created_at=file['created_at']) for file in files]
+        files=[UploadedFile(id=file['id'], name=file['name'],created_at=file['created_at']) for file in files]
     )
 
-@projects_router.get("/{project_id}/files", response_model=List[File])
+@projects_router.get("/{project_id}/files", response_model=List[UploadedFile])
 def get_files_by_project(project_id: int):
     conn = get_db_connection()
     conn.row_factory = sqlite3.Row
@@ -158,7 +158,41 @@ def get_files_by_project(project_id: int):
     if not files_rows:
         raise HTTPException(status_code=404, detail="No files found for the given project ID")
     
-    files = [File(id=row['id'], name=row['name'], created_at=row['created_at']) for row in files_rows]
+    files = [UploadedFile(id=row['id'], name=row['name'], created_at=row['created_at']) for row in files_rows]
     
     conn.close()
     return files
+
+@projects_router.get("/{project_id}/tags", response_model=List[Tag])
+async def read_tags_by_project(project_id: int):
+    """API endpoint to fetch tags associated with a project ID."""
+    try:
+        tags = get_tags_by_project_id(project_id)
+        if not tags:
+            raise HTTPException(status_code=404, detail="No tags found for this project")
+        return tags
+    except sqlite3.DatabaseError as e:
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+
+def get_tags_by_project_id(project_id: int) -> List[Dict[str, Any]]:
+    """Retrieve tags for a given project ID from the database."""
+    conn = get_db_connection()
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT Tags.id, Tags.name, Tags.description, Tags.color
+        FROM Tags
+        INNER JOIN Projects_Tags ON Tags.id = Projects_Tags.tag_id
+        WHERE Projects_Tags.project_id = ?
+    """, (project_id,))
+
+    rows = cursor.fetchall()
+    tags = [dict(row) for row in rows]
+
+    cursor.close()
+    conn.close()
+
+    return tags

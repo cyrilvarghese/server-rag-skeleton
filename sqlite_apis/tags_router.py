@@ -17,14 +17,14 @@ def get_db_connection():
 # CRUD Operations
 
 # List all tags
-@tags_router.get("/tags", response_model=list[Tag])
+@tags_router.get("/", response_model=list[Tag])
 def list_tags():
     conn = get_db_connection()
-    tags = conn.execute('SELECT name, description, color  FROM Tags').fetchall()
+    tags = conn.execute('SELECT id,name, description, color  FROM Tags').fetchall()
     conn.close()
     return [dict(tag) for tag in tags]
 # Create a new tag
-@tags_router.post("/tags/", response_model=Tag)
+@tags_router.post("/", response_model=Tag)
 def create_tag(tag: Tag):
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -48,7 +48,7 @@ def create_tag(tag: Tag):
     return {**tag.model_dump(), "id": new_tag_id}
 
 # Read a single tag by ID
-@tags_router.get("/tags/{tag_id}", response_model=Tag)
+@tags_router.get("/{tag_id}", response_model=Tag)
 def read_tag(tag_id: int):
     conn = get_db_connection()
     tag = conn.execute('SELECT * FROM Tags WHERE id = ?', (tag_id,)).fetchone()
@@ -58,7 +58,7 @@ def read_tag(tag_id: int):
     return dict(tag)
 
 # Update a tag
-@tags_router.put("/tags/{tag_id}", response_model=Tag)
+@tags_router.put("/{tag_id}", response_model=Tag)
 def update_tag(tag_id: int, tag: Tag):
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -72,7 +72,7 @@ def update_tag(tag_id: int, tag: Tag):
     return dict(updated_tag)
 
 # Delete a tag
-@tags_router.delete("/tags/{tag_id}", response_model=Tag)
+@tags_router.delete("/{tag_id}", response_model=Tag)
 def delete_tag(tag_id: int):
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -84,3 +84,4 @@ def delete_tag(tag_id: int):
     conn.commit()
     conn.close()
     return dict(tag_to_delete)
+
