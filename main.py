@@ -7,6 +7,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from config import BASE_PATH
 from modules.routers.qq_LLM_router import qq_LLM_router
+from modules.routers.document_router import document_router
 from sqlite_apis.tags_router import tags_router
 from sqlite_apis.projects_router import projects_router
 from sqlite_apis.jobs_router import jobs_router
@@ -37,6 +38,7 @@ app.include_router(qq_LLM_router, prefix="/api/data")
 app.include_router(projects_router, prefix="/api/projects")
 app.include_router(jobs_router, prefix="/api/jobs")
 app.include_router(roles_router, prefix="/api/roles")
+app.include_router(document_router, prefix="/api/chunks")
 
 @app.get("/")
 async def read_root():

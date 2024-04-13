@@ -8,6 +8,7 @@ import sqlite3
 from datetime import datetime
 import os
  
+from modules.file_processor import process_files
 from sqlite_apis.data.db_sql import get_db_connection
 
 jobs_router = APIRouter();
@@ -52,6 +53,8 @@ async def create_job_with_files(
     
     for file in files:
         save_file(file, job_id, project_id, conn)
-
+    
+    await process_files(); 
+    
     return {"message": "Job and files created successfully", "job_id": job_id}
 

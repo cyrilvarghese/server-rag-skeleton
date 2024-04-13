@@ -16,6 +16,8 @@ class Tag(BaseModel):
 class Job(BaseModel):
     id: int
     name: str
+    created_at: str
+
 
  
 class Project(BaseModel):

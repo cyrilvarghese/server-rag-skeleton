@@ -7,7 +7,7 @@ from modules.cross_encoder_rerank import get_reranked_docs
 
 load_dotenv()
 query_router = APIRouter()
-router = APIRouter()
+ 
 
 @query_router.post('/')
 async def process_request(req_body: dict):

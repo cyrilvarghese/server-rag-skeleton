@@ -7,14 +7,6 @@ import json
 from langchain_core.output_parsers import StrOutputParser
 qq_LLM_router = APIRouter()
 
-
- 
-
-
- 
-
-
-
 @qq_LLM_router.post("/qq")
 async def answer(request_data: dict):
     topic = request_data.get("topic")

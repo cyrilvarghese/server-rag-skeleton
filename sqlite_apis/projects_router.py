@@ -29,14 +29,14 @@ async def read_projects():
     projects = []
     for project_row in projects_rows:
         # For each project, fetch associated jobs (IDs and names)
-        cursor.execute("SELECT id, name FROM Jobs WHERE project_id = ?", (project_row['id'],))
+        cursor.execute("SELECT id, name,created_at FROM Jobs WHERE project_id = ?", (project_row['id'],))
         jobs = cursor.fetchall()
         
         projects.append(Project(
             id=project_row['id'],
             name=project_row['name'],
             description=project_row['description'],
-            jobs=[Job(id=job['id'], name=job['name']) for job in jobs]
+            jobs=[Job(id=job['id'], name=job['name'],created_at=job["created_at"]) for job in jobs]
         ))
     
     conn.close()
@@ -70,14 +70,14 @@ async def read_project(project_id: int):
         raise HTTPException(status_code=404, detail="Project not found")
     
     # Fetch associated jobs for the specific project
-    cursor.execute("SELECT id, name FROM Jobs WHERE project_id = ?", (project_id,))
+    cursor.execute("SELECT id, name,created_at FROM Jobs WHERE project_id = ? ORDER BY created_at DESC", (project_id,))
     jobs = cursor.fetchall()
     
     project = Project(
         id=project_row['id'],
         name=project_row['name'],
         description=project_row['description'],
-        jobs=[Job(id=job['id'], name=job['name']) for job in jobs]
+        jobs=[Job(id=job['id'], name=job['name'],created_at=job['created_at']) for job in jobs]
     )
     
     conn.close()
