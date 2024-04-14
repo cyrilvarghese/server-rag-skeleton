@@ -62,11 +62,11 @@ def main():
 
     # Sample data for the Tags table
     tags_data = [
-        ('Strategic', 'Related to strategic overview', '#FFD700'),
-        ('Operational', 'Pertains to operations management', '#007FFF'),
-        ('Financial', 'Involves financial data and statistics', '#20B2AA'),
-        ('Regulatory', 'Concerns regulatory compliance', '#DAA520'),
-        ('HR', 'Relates to human resources', '#708090')
+        ('educational-performance', 'Description for educational-performance', '#6A5ACD'),  # Slate Blue
+        ('compliance-and-improvement', 'Description for compliance-and-improvement', '#20B2AA'),  # Light Sea Green
+        ('data-integrity-and-monitoring', 'Description for data-integrity-and-monitoring', '#3CB371'),  # Medium Sea Green
+        ('parent-and-community-engagement', 'Description for parent-and-community-engagement', '#FFA07A'),  # Light Salmon
+        ('special-education-focus', 'Description for special-education-focus', '#BA55D3')  # Medium Orchid
     ]
     
     # Assuming we have the following structure for 'Roles_Tags' and 'Projects_Tags' junction tables

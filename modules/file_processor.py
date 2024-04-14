@@ -8,7 +8,7 @@ import chromadb
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from config import CHUNK_SIZE,UPLOADS_FOLDER
 from modules.db import get_LC_chroma_client
-from modules.helpers.cross_encoders import get_relevant_tags
+from modules.helpers.cross_encoders_tag_scores import get_relevant_tags
 from datetime import datetime
  
 # Initialize list to store documents

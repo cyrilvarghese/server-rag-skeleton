@@ -7,8 +7,9 @@ class Tag(BaseModel):
     id:Optional[int] = None
     name: str
     description: str
-    color: Optional[str] = None  # Optional field
+    color: Optional[str] = None   
     role_ids: List[int] = [] 
+    score: Optional[str] = [] 
     class Config:
     # This will exclude default values (e.g., None or empty lists) from the output
         exclude_unset = True
