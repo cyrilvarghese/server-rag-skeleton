@@ -3,6 +3,7 @@ import asyncio
 import sqlite3
  
 from typing import Any, Dict, List, Optional, Annotated
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from sqlite_apis.data.model import UploadedFile, Job, JobDetails, Project, ProjectCreate, Tag
  
@@ -196,3 +197,31 @@ def get_tags_by_project_id(project_id: int) -> List[Dict[str, Any]]:
     conn.close()
 
     return tags
+
+@projects_router.post("/{project_id}/tags")
+async def create_tag_for_project(tag: Tag, project_id: int):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Insert the new tag
+    cursor.execute("INSERT INTO Tags (name, description, color) VALUES (?, ?, ?)",
+                   (tag.name, tag.description, tag.color))
+    tag_id = cursor.lastrowid
+    
+    # Link the tag to the project
+    cursor.execute("INSERT INTO Projects_Tags (project_id, tag_id) VALUES (?, ?)",
+                   (project_id, tag_id))
+
+    # Link the tag to the roles
+    for role_id in tag.role_ids:
+        cursor.execute("INSERT INTO Roles_Tags (role_id, tag_id) VALUES (?, ?)",
+                       (role_id, tag_id))
+
+    conn.commit()
+    conn.close()
+
+    return JSONResponse(content={"message": "Tag created and linked successfully",
+                                 "tag_id": tag_id,
+                                 "project_id": project_id,
+                                 "linked_role_ids": tag.role_ids},
+                        status_code=status.HTTP_201_CREATED)

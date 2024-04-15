@@ -47,6 +47,13 @@ def get_tags_by_role_id(role_id: int) -> List[Dict[str, Any]]:
 
 
 
+@roles_router.get("/{role_id}", response_model=Role)
+async def read_role_with_tags(role_id: int):
+    """API endpoint to fetch a role and its associated tags."""
+    role = get_role_with_tags(role_id)
+    if not role:
+        raise HTTPException(status_code=404, detail="Role not found")
+    return role
 def get_role_with_tags(role_id: int) -> Dict[str, Any]:
     """Retrieve a role and its associated tags from the database."""
     conn = get_db_connection();
@@ -82,10 +89,13 @@ def get_role_with_tags(role_id: int) -> Dict[str, Any]:
 
     return role
 
-@roles_router.get("/{role_id}", response_model=Role)
-async def read_role_with_tags(role_id: int):
-    """API endpoint to fetch a role and its associated tags."""
-    role = get_role_with_tags(role_id)
-    if not role:
-        raise HTTPException(status_code=404, detail="Role not found")
-    return role
+
+
+@roles_router.get("/", response_model=List[dict])
+async def get_all_roles():
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM Roles")
+    roles = cursor.fetchall()
+    conn.close()
+    return [dict(role) for role in roles]
