@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 from config import DB_NAME, BASE_PATH
 import chromadb
 import os
-from modules.file_processor import process_files
+from modules.file_processor_with_indexing import process_files
 load_dotenv()
  
 def clear_processed_files():

@@ -4,7 +4,7 @@ import os
 from fastapi import APIRouter, File, UploadFile, Form, HTTPException
 from typing import List
 import json
-from modules.file_processor import process_files
+from modules.file_processor_with_indexing import process_files
 from config import UPLOADS_FOLDER
 upload_router = APIRouter()
  

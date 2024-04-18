@@ -1,3 +1,0 @@
-tag_description_mapping_old.json
-EDI43444.pdf
-tag_description_mapping.json

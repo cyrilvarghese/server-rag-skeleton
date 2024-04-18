@@ -8,7 +8,7 @@ import sqlite3
 from datetime import datetime
 import os
  
-from modules.file_processor import process_files
+from modules.file_processor_with_indexing import process_files
 from sqlite_apis.data.db_sql import get_db_connection
 
 jobs_router = APIRouter();

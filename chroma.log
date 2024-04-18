@@ -5530,3 +5530,964 @@ During handling of the above exception, another exception occurred:
 [32mINFO[0m:     [15-04-2024 20:06:18] 127.0.0.1:56762 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
 [32mINFO[0m:     [15-04-2024 20:06:18] 127.0.0.1:56768 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
 [32mINFO[0m:     [15-04-2024 20:06:18] 127.0.0.1:56768 - "POST /api/v1/collections/68241932-da62-4846-87ff-44ee8fdc60b4/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:29:39] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [18-04-2024 09:29:39] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [18-04-2024 09:29:39] Starting component System
+[36mDEBUG[0m:    [18-04-2024 09:29:39] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [18-04-2024 09:29:39] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 09:29:39] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:29:39] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 09:29:39] Starting component Posthog
+[36mDEBUG[0m:    [18-04-2024 09:29:39] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 09:29:39] Starting component SegmentAPI
+[32mINFO[0m:     [18-04-2024 09:29:39] Started server process [[36m12670[0m]
+[32mINFO[0m:     [18-04-2024 09:29:39] Waiting for application startup.
+[32mINFO[0m:     [18-04-2024 09:29:39] Application startup complete.
+[32mINFO[0m:     [18-04-2024 09:29:39] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [18-04-2024 09:29:45] Shutting down
+[32mINFO[0m:     [18-04-2024 09:29:45] Waiting for application shutdown.
+[36mDEBUG[0m:    [18-04-2024 09:29:45] Stopping component System
+[36mDEBUG[0m:    [18-04-2024 09:29:45] Stopping component SegmentAPI
+[36mDEBUG[0m:    [18-04-2024 09:29:45] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 09:29:45] Stopping component Posthog
+[36mDEBUG[0m:    [18-04-2024 09:29:45] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 09:29:45] Stopping component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:29:45] Stopping component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 09:29:45] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 09:29:45] Application shutdown complete.
+[32mINFO[0m:     [18-04-2024 09:29:45] Finished server process [[36m12670[0m]
+[32mINFO[0m:     [18-04-2024 09:29:48] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [18-04-2024 09:29:48] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [18-04-2024 09:29:48] Starting component System
+[36mDEBUG[0m:    [18-04-2024 09:29:48] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [18-04-2024 09:29:48] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 09:29:48] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:29:48] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 09:29:48] Starting component Posthog
+[36mDEBUG[0m:    [18-04-2024 09:29:48] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 09:29:48] Starting component SegmentAPI
+[32mINFO[0m:     [18-04-2024 09:29:49] Started server process [[36m12743[0m]
+[32mINFO[0m:     [18-04-2024 09:29:49] Waiting for application startup.
+[32mINFO[0m:     [18-04-2024 09:29:49] Application startup complete.
+[32mINFO[0m:     [18-04-2024 09:29:49] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [18-04-2024 09:29:55] 127.0.0.1:34050 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:29:55] 127.0.0.1:34050 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 09:29:55] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 09:29:55] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 09:29:55] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 09:29:55] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:29:56] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:29:56] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 09:29:56] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 09:29:56] 127.0.0.1:34054 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:29:56] 127.0.0.1:34054 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:29:56] 127.0.0.1:34054 - "GET /api/v1/collections/6704f721-b3c5-4750-9e39-687b4bbf5365/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:29:56] 127.0.0.1:34058 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:29:56] 127.0.0.1:34058 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:29:56] 127.0.0.1:34072 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:33:24] 127.0.0.1:40870 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:33:24] 127.0.0.1:40870 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:33:24] 127.0.0.1:40872 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:33:32] 127.0.0.1:40872 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 09:33:33] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 09:33:33] 127.0.0.1:40872 - "POST /api/v1/collections/6704f721-b3c5-4750-9e39-687b4bbf5365/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:35:04] 127.0.0.1:40928 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:35:04] 127.0.0.1:40928 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 09:35:04] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 09:35:04] 127.0.0.1:40938 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:35:04] 127.0.0.1:40938 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:35:04] 127.0.0.1:40938 - "GET /api/v1/collections/bc32deb1-5571-40ee-ba32-930a5cff3dfe/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:35:04] 127.0.0.1:40946 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:35:04] 127.0.0.1:40946 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:35:05] 127.0.0.1:40952 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:37:55] 127.0.0.1:36554 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:37:55] 127.0.0.1:36554 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:37:55] 127.0.0.1:36570 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:38:02] 127.0.0.1:36570 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 09:38:02] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 09:38:03] 127.0.0.1:36570 - "POST /api/v1/collections/bc32deb1-5571-40ee-ba32-930a5cff3dfe/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:39:47] 127.0.0.1:60604 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:39:47] 127.0.0.1:60604 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 09:39:47] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 09:39:47] 127.0.0.1:60614 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:39:48] 127.0.0.1:60614 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:39:48] 127.0.0.1:60614 - "GET /api/v1/collections/fb302061-fedf-409c-af25-18867c3c42ab/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:39:48] 127.0.0.1:60630 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:39:48] 127.0.0.1:60630 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:39:48] 127.0.0.1:60632 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:42:50] 127.0.0.1:46802 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:42:51] 127.0.0.1:46802 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:42:51] 127.0.0.1:46812 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:43:16] 127.0.0.1:46812 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 09:43:16] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 09:43:16] 127.0.0.1:46812 - "POST /api/v1/collections/fb302061-fedf-409c-af25-18867c3c42ab/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:43:17] 127.0.0.1:46812 - "POST /api/v1/collections/fb302061-fedf-409c-af25-18867c3c42ab/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:48:41] 127.0.0.1:52986 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:48:41] 127.0.0.1:52986 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:48:41] 127.0.0.1:52990 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:49:20] 127.0.0.1:52140 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:49:21] 127.0.0.1:52140 - "POST /api/v1/collections/fb302061-fedf-409c-af25-18867c3c42ab/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:49:21] 127.0.0.1:52140 - "POST /api/v1/collections/fb302061-fedf-409c-af25-18867c3c42ab/delete HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:49:27] 127.0.0.1:52140 - "POST /api/v1/collections/fb302061-fedf-409c-af25-18867c3c42ab/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:49:30] 127.0.0.1:52140 - "POST /api/v1/collections/fb302061-fedf-409c-af25-18867c3c42ab/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:51:05] 127.0.0.1:37490 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:51:05] 127.0.0.1:37490 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:51:05] 127.0.0.1:37496 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:51:05] 127.0.0.1:37496 - "POST /api/v1/collections/fb302061-fedf-409c-af25-18867c3c42ab/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:53:05] 127.0.0.1:40918 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:53:05] 127.0.0.1:40918 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 09:53:05] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 09:53:05] 127.0.0.1:40928 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:53:05] 127.0.0.1:40928 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 09:53:05] 127.0.0.1:40928 - "GET /api/v1/collections/046514a4-60b5-49f2-8452-59b4d59f6ce7/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:12:07] 127.0.0.1:47802 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:12:07] 127.0.0.1:47802 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:12:07] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 10:12:07] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 10:12:07] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 10:12:07] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 10:12:07] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:12:08] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:12:08] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 10:12:08] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 10:12:08] 127.0.0.1:47808 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:12:08] 127.0.0.1:47808 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:12:08] 127.0.0.1:47808 - "GET /api/v1/collections/9c0fb18f-89fc-4fb2-8575-90e3a90b7417/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:12:08] 127.0.0.1:47810 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:12:08] 127.0.0.1:47810 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:12:08] 127.0.0.1:47814 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:15:39] 127.0.0.1:48264 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:15:39] 127.0.0.1:48264 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:15:39] 127.0.0.1:48276 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:15:55] 127.0.0.1:48276 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:15:55] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 10:15:56] 127.0.0.1:48276 - "POST /api/v1/collections/9c0fb18f-89fc-4fb2-8575-90e3a90b7417/upsert HTTP/1.1" 200
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 13974f24-3bc8-5fab-ae6f-bde57397f4f1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: adaa814e-61ed-5e27-8068-7cdd44658920
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 731693a0-a581-562c-ba49-8d2a0ec8f08f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 66f9fd6a-303b-5237-80e0-9371a31342ec
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 99375c7e-d656-50ab-8eb9-4a1a09507857
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 3ede5615-09fb-501a-aa46-d628ad424190
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 130c6951-110e-5175-a941-658c6694ce55
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 50fe0b0a-3c86-50e9-ac60-63719b73b700
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 863bf8c7-1457-5baf-8820-2994df9c489e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 0b15caa5-64ea-5326-9912-469c8bf6dc33
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c4dc0694-50b4-5ea7-b305-328f120475bd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4ae05c8f-afc9-5ef4-8cb4-24208b087734
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 21baa2fb-a5af-570e-88d7-5c7d77b7fdd9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ab3afc2f-aac6-5fa1-982d-86617bee7a7b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2cc52306-4e45-5066-b597-74b734ed53cd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b786e911-622c-5355-bb9d-184481d43ece
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6842b006-d873-58bf-a1af-92d5867f71f3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1fd745f0-373f-56e7-9161-d7a764e530bd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5f62c048-3adb-58e5-b116-5861bcca7564
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: be3d1654-df58-5033-b393-c345df24dc2f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 804ff927-13e8-5a69-8694-34592e61330e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 31affc00-aa19-572f-8ce4-ca74f9f15309
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7af8184d-45a0-5a5d-bef0-e3fc4ca2330f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 317631b4-5a17-596a-b3c1-7ec7dc0d7c43
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1239586a-e1c1-5cfa-b397-1995a4ac8299
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9aed7324-f39d-562c-8af8-794821662859
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 735dd127-ea56-5a00-9599-199d49740ddb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7afcbd8c-b3fc-575e-91b8-4ceb1647322d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: aab082f8-ea9b-58f3-a958-109c3f512ccb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 818a2c8c-f423-5b93-851a-913fbd0a2554
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 8c7b6934-1ebf-5423-b618-593d4d5e46b2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 302cb1a9-5a9a-538e-9ffc-6a23e19238e4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a864bef7-fa25-5072-b219-6762aac48c78
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 3090692b-7644-5722-b5c0-534659f182bd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ea1fff7a-6e31-510d-a828-469391b13f41
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bad81d00-2441-59f3-86fb-6a8e1e088523
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 21c9768c-a4e7-5ced-88de-5cd4f4cfaf4f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6c246b0a-f1a5-52c2-9b52-ff143af7139e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d4b8a420-673b-535a-bf98-900160cc6d3d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b3ae8da6-dc1e-5686-b830-3955a1fc7d47
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d8bdcd31-0470-5331-9f46-579d31295060
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fdeea440-5dbd-5cee-b449-14a7c95e03fd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f85ec216-5fb3-58be-adc8-ed92d48841e3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f43b6fa0-b5f7-58cd-b510-332302841f7e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c6464a6d-1fb8-5151-8598-f2ea349d6179
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: dfab44d8-a356-5f72-b938-2a2eaa1de0ea
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 391e2208-9b73-5552-8915-df01927c9061
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fb592329-eef2-5ed3-8965-8c4b52eba46d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1e411494-44a6-5059-bdbe-9d2c304398ab
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a113efd5-b320-5b2b-b413-3242bfc97d88
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6450d50b-e84e-5c5c-b386-67d8e1b419e9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f9bb6c8f-b873-5808-950f-ae12211c9a47
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d03f2c95-538b-56f6-983f-3e14f953fab6
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4711eb73-7558-5bb0-9cfc-1e2ff157a418
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 3a044d33-5346-5208-a237-836dd57b9ee1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2f0912bd-4836-53d1-aadd-f18e0d04acef
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9055c042-69ca-5f75-8e46-0477dc1bd24d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e1109979-9cda-5dd8-a42c-c61cad49cf80
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b7b4d8c8-7369-5b24-a98e-5cf8aebe411a
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fe2e0472-5112-5dfd-969c-dd85140c83f3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 850f9829-313d-5a04-be11-db9a809e9856
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 0acac339-7170-5a08-a73c-06d8e2bb8eb9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a9fb03d5-71ff-5d5b-9d0b-5d5f5392817e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e0843f10-5865-5f78-99b8-60288e202bf5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 03edacb8-6aa4-559f-9853-a49c176f50fe
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6e7b0bdb-ba52-538b-8bd2-590f6c7753b1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 01188bf2-01cf-5927-99ff-67043a74671b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f2f77f39-acdf-5e67-bcf1-d7127ba1bf2b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 91ad8b15-79d2-57fd-8398-aa102e1eba73
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d87ae6ad-0cce-5c49-8747-66472d122b3b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 57e2ac0b-65c5-5d14-b5d3-ec227f700712
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: dff40321-b2c9-59e7-9611-137bcbddda38
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f8a693c5-cb42-5819-aae7-5d7b075e7e13
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 487534e4-dbd5-5d38-b729-2d3b1b77195c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1cfe716d-5e19-5a09-a2ec-bbb9c7b19c5e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2d81b369-1981-597a-a53a-f6e1c0c21eac
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1b9d528e-ab1e-5e92-9089-7db25c950dd0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f7a07e61-0444-5b65-a5b2-145052515a01
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6299792d-8010-570d-8ded-9a0ae78a9d54
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 39b2d004-a48c-5aef-a0cf-1033494a1082
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e3c7e30c-21ac-5685-ab54-28035f7cd681
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 530c21b0-5914-5a09-957a-c0bbaa722b7d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 93479e55-b406-555e-bf27-5bda4f2ee96f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e43c7c92-e2dd-50f0-adfe-e91cf1211744
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 80f3241c-18d4-5d1d-9877-ec99c4253bc8
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: caee8112-b37f-5f4f-8d52-9956d23fef54
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 798a0812-92c4-5df5-8025-029768ff2ac2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: dcd16a20-9821-5f4f-a195-03852121dc86
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c853290b-11f8-51d7-a570-096c9b431a2d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a2e7efd9-937d-59c2-9ec1-381899cd3334
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 0af52e58-feb0-5165-ab9f-e250e56b0e69
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c029f17e-cb80-5413-8398-cf7bf834194d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4487d5de-ad77-5be0-9874-3b841442a9a1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fd2d96a2-b37f-5339-ab43-8dc02161b89b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d17d49da-59ae-5b8e-90e4-6b8b2365b202
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e80da96e-dad7-53ca-8778-e75661ab215c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 52808b87-efa9-574e-b5c3-1757855763a5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f80b9db1-f32e-5a10-be66-360c669e7962
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b6bd7039-79ac-5af2-b712-6a656c67f93f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b3b1222d-5199-5da8-9eb6-2ffcc3d8f956
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ac64fb3f-2889-579f-8fff-2c4017357909
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 51b18cf1-bc61-5009-a476-36a457c5f275
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 20ea4b9a-4172-5c8d-8bdc-5c6f10d57f80
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1776c9e6-5860-586f-a36f-e326064c7870
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b182f408-b2d8-5f63-8f65-e28ea50568ce
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f84a8860-b3aa-5154-b94c-b2649bee117d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6ff8f327-b190-592f-8fbb-e28603b1f6f9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: af51c157-399d-5d3f-953d-38cc0260d072
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 064243e2-88f9-5208-b2a9-749c5c294747
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 18e54727-ee7f-5409-a74b-6268e8ea2c46
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f73cbab9-f3bd-5584-b608-ab50b0493d7a
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 08bd9864-0ba4-5c4f-bec4-c16edbee04f1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 18c20ccd-4967-5e6c-99dd-f61c63506112
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7520d457-7a2a-5a42-98fe-361a9a974cf9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 512f20c5-1f01-5b1c-a485-3d4fdb1f2813
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 0341fda8-97e7-52aa-8afa-f4530fc4b75f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bc0b5f3a-b4b4-5726-b8db-72e6cbdc39d3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 92d66708-6d26-5040-b987-a6e053ddaae3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bc2630db-6d7d-5b29-845d-3372dc528e1c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 877e5ebf-f95d-580a-a501-335376b05f94
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9fca2b20-8575-5ff8-8898-8fd7b33cfaa1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 81245f2e-4340-5da0-9d73-1c4020e8491e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 916ea7b2-f116-5bab-bd8e-faa415adf5f4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2b1bd788-6a8b-5297-a771-ab12a206b8a1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 26a881c1-2595-5110-bb9a-53cf09192dbf
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b449be61-9d4b-5912-9e78-b48c1fbce1b0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 8a348700-e83e-534d-9607-9598b1d558e5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2dd6a365-218e-5d9c-a311-c50c6328721c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d4e9f18b-e58d-5c7f-a1bd-930dada2ab09
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5609f847-da17-552e-a878-be8c9d7dc8fb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 112bf35a-1682-58e0-9553-fdb88e2c740e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c3ca74b6-1710-5ad8-ae38-3bfd7a2b4979
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 156a1567-253a-5d92-8377-049ee98f1c2d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5228df46-110b-5b2a-8514-8e86957e37b5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b1f59cae-2c54-5db5-99fb-2b60d687c7be
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 98f0908e-99c6-5bd4-8b4f-e5a4c8733ac5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e9a614ee-fc59-5ed4-af2d-082e14592e04
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 18ec0ce9-00a8-5773-93af-49dac8e7a472
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 81d455d3-5587-52d0-88e3-c20e824fd4dd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 36a8d891-23a0-58d4-942d-5d020c9de621
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: cff6cfb9-0690-584a-b53a-c3b580474c44
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bb21ec4e-a7da-5989-b092-278fa483674c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 242a0fbf-8d89-5efd-b906-85598ea19cc5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 11746bd6-3dfa-54d6-afec-816317ff0b5e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 498e04c7-6488-5aed-b816-f6eb146da488
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d584da68-1a9b-5885-afc1-cf6d1d6bfd55
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 78c02dc2-49a9-5d84-a762-45fb7b5bd1f2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 78226681-8e38-5b2a-8269-c8604171686d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 501ec864-c4f6-54b7-a5d5-5fff540651e0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b0c48643-920c-5aa3-9afe-6868895b38e7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 66147d3d-1bfc-577a-b7ea-c220120ac0e2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: acb0ad9a-b23b-594c-be34-fa43c38e9ada
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 15b94e15-7b2c-51e4-beab-63bee2630621
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a03acf89-6569-5fc3-9d93-8508c0775c53
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ceb8a562-a8f2-5d14-9483-d1e4958d7c3d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5a550032-277b-59ba-8cab-00801d576e57
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5af0ddd5-3877-5830-a658-bf2e534dadd6
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4982e465-8ba5-5055-810f-484ec766de53
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 091f1312-9c40-5f8f-b066-324f5dd5d357
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b25e5a22-a78f-582d-94ad-b2d816ff390e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 38dcf18f-f194-5f5b-ab59-273c989d07c0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f605fc5b-1f4e-5494-a113-d20f449bdbfc
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b7315133-1e48-5ddb-9a91-016682e42751
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 34d2ee87-fc79-50b5-9fc9-7d85b9dd2464
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7bf09a72-254a-5cef-ae06-7eeeecac57eb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7a2b53c3-f1f6-5a17-b9e7-02f9718c551c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 3b9f0e98-7ae0-58b0-8188-4c36e4896c7e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a75438be-7b15-5bf9-8601-5d62477ccc3e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 87943a44-8d5b-5840-908d-e1f009f0915d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: cdde7cca-8e4e-5676-a0ed-f81868680361
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7021a92f-ea9a-53ea-b770-c20b3fe0e3f7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 8e5a6509-187b-5c4d-babe-f8644df35228
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fa035e80-df4d-501a-976d-7b9688d104d7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: db727bde-564d-52f4-b761-830d8a69da0a
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: beac8abe-4b23-5f8d-85e7-949faf054fa8
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: afe3cef3-64fd-5e0b-a274-10574901367e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bf289b30-539d-5ec6-8d33-e23bf441af1d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a1cf9960-209d-5c09-86f7-39edf124ca92
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ccf84a24-04ec-5bca-b79c-10828f3a9f20
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 50cf778c-7e42-5ea2-b57d-e4c281aecf16
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 97408956-2e11-5e12-af01-4a85794cc224
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 00af96ce-631d-5ca8-857b-2c1652d624fe
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7a65307f-10aa-5aed-90c2-b35a95cf358d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: dba35fbd-2e3f-5e19-ae15-2eadedf6fd2b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7d9608f0-a9fd-5f41-b04a-46bf6417ffa4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 34002a62-9225-5560-915a-e1c09b6c5896
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b7176860-fa0f-5126-bf2c-e62c0e8b3aa6
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9a8b7df4-2d80-566b-b1dc-9d00c76e65f2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9c24b1dd-b2bb-5c4e-a707-573873b54360
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 61f8f7e4-e3d9-5763-a154-ba5680e62910
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2ece61ea-85cb-5683-84f2-5ecefeefc8ff
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 93ef0b44-2d98-58b0-b527-02283eb07750
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e7ace107-010d-5ce3-9119-5baa710ac22f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6adad7af-8fa2-55d8-a5e4-c0a4c71844bf
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 046d0804-7a38-5dc7-ae0f-13c6112f0908
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2a74b349-8593-5156-9eae-f99a1a81b2a7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bdda5af1-51de-55b0-b797-7ba092cf71a0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4edc4860-7599-5bef-9129-2df87cc79f12
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f77cbd0e-43a0-5859-a178-44a007e2051e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c51a1426-95ec-5e05-b6e9-232f8e06f391
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5acbf350-edf3-5a5b-97d1-4fa374d8c369
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 91990c97-3872-5bf7-a139-9bf5bed632d1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f23be1de-4e3e-5962-a50b-861cd34371cf
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 59e00b6d-6794-5eb2-a972-c3beefb965dd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6ef0cf31-3f36-5a90-b4e5-eacdc85e7e31
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c4c542d1-7881-5bc6-881c-be322efaedcb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c326e5fe-486e-56bc-b3a9-682b962ed011
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 125bc431-72b2-540d-8900-5606016382b4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2fb35e41-3e43-51eb-a4df-2d5e052f130b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 391f74b7-c366-5244-9496-c3917d55b347
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a2c3730a-0da6-5d0a-a865-95a53eefa103
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: eab3187f-e3e2-5cfd-a325-5901cacdb987
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 16536980-dde4-52bc-a63a-79138d16aaa1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ae3e07b1-e4fb-5daf-871d-5c938a0f3ee4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 224eaf16-901d-5d2f-93a3-c99616cac725
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 44535082-1d19-51eb-909d-9ab5030271d7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: edfeb5db-37a2-5a46-8468-381636eae08f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9c753591-2583-51b2-bb3f-5c0ea0647884
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 73d58012-30e2-5823-a309-d20ecbd66b1e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 34fcc7a3-cfd1-5303-9ebc-06c5c0f3e2c8
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6598cc32-ab7c-5f25-ae95-908507f2bd28
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4c74b165-fdcf-5427-95fd-37e350c50437
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2c295d23-86b1-50c0-8697-9eec174595e6
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 8f7053d8-f44b-5e46-862f-a23cb21dfe42
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 13974f24-3bc8-5fab-ae6f-bde57397f4f1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: adaa814e-61ed-5e27-8068-7cdd44658920
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 731693a0-a581-562c-ba49-8d2a0ec8f08f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 66f9fd6a-303b-5237-80e0-9371a31342ec
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 99375c7e-d656-50ab-8eb9-4a1a09507857
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 3ede5615-09fb-501a-aa46-d628ad424190
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 130c6951-110e-5175-a941-658c6694ce55
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 50fe0b0a-3c86-50e9-ac60-63719b73b700
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 863bf8c7-1457-5baf-8820-2994df9c489e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 0b15caa5-64ea-5326-9912-469c8bf6dc33
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c4dc0694-50b4-5ea7-b305-328f120475bd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4ae05c8f-afc9-5ef4-8cb4-24208b087734
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 21baa2fb-a5af-570e-88d7-5c7d77b7fdd9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ab3afc2f-aac6-5fa1-982d-86617bee7a7b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2cc52306-4e45-5066-b597-74b734ed53cd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b786e911-622c-5355-bb9d-184481d43ece
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6842b006-d873-58bf-a1af-92d5867f71f3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1fd745f0-373f-56e7-9161-d7a764e530bd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5f62c048-3adb-58e5-b116-5861bcca7564
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: be3d1654-df58-5033-b393-c345df24dc2f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 804ff927-13e8-5a69-8694-34592e61330e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 31affc00-aa19-572f-8ce4-ca74f9f15309
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7af8184d-45a0-5a5d-bef0-e3fc4ca2330f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 317631b4-5a17-596a-b3c1-7ec7dc0d7c43
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1239586a-e1c1-5cfa-b397-1995a4ac8299
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9aed7324-f39d-562c-8af8-794821662859
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 735dd127-ea56-5a00-9599-199d49740ddb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7afcbd8c-b3fc-575e-91b8-4ceb1647322d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: aab082f8-ea9b-58f3-a958-109c3f512ccb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 818a2c8c-f423-5b93-851a-913fbd0a2554
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 8c7b6934-1ebf-5423-b618-593d4d5e46b2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 302cb1a9-5a9a-538e-9ffc-6a23e19238e4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a864bef7-fa25-5072-b219-6762aac48c78
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 3090692b-7644-5722-b5c0-534659f182bd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ea1fff7a-6e31-510d-a828-469391b13f41
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bad81d00-2441-59f3-86fb-6a8e1e088523
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 21c9768c-a4e7-5ced-88de-5cd4f4cfaf4f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6c246b0a-f1a5-52c2-9b52-ff143af7139e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d4b8a420-673b-535a-bf98-900160cc6d3d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b3ae8da6-dc1e-5686-b830-3955a1fc7d47
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d8bdcd31-0470-5331-9f46-579d31295060
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fdeea440-5dbd-5cee-b449-14a7c95e03fd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f85ec216-5fb3-58be-adc8-ed92d48841e3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f43b6fa0-b5f7-58cd-b510-332302841f7e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c6464a6d-1fb8-5151-8598-f2ea349d6179
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: dfab44d8-a356-5f72-b938-2a2eaa1de0ea
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 391e2208-9b73-5552-8915-df01927c9061
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fb592329-eef2-5ed3-8965-8c4b52eba46d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1e411494-44a6-5059-bdbe-9d2c304398ab
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a113efd5-b320-5b2b-b413-3242bfc97d88
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6450d50b-e84e-5c5c-b386-67d8e1b419e9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f9bb6c8f-b873-5808-950f-ae12211c9a47
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d03f2c95-538b-56f6-983f-3e14f953fab6
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4711eb73-7558-5bb0-9cfc-1e2ff157a418
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 3a044d33-5346-5208-a237-836dd57b9ee1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2f0912bd-4836-53d1-aadd-f18e0d04acef
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9055c042-69ca-5f75-8e46-0477dc1bd24d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e1109979-9cda-5dd8-a42c-c61cad49cf80
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b7b4d8c8-7369-5b24-a98e-5cf8aebe411a
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fe2e0472-5112-5dfd-969c-dd85140c83f3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 850f9829-313d-5a04-be11-db9a809e9856
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 0acac339-7170-5a08-a73c-06d8e2bb8eb9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a9fb03d5-71ff-5d5b-9d0b-5d5f5392817e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e0843f10-5865-5f78-99b8-60288e202bf5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 03edacb8-6aa4-559f-9853-a49c176f50fe
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6e7b0bdb-ba52-538b-8bd2-590f6c7753b1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 01188bf2-01cf-5927-99ff-67043a74671b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f2f77f39-acdf-5e67-bcf1-d7127ba1bf2b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 91ad8b15-79d2-57fd-8398-aa102e1eba73
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d87ae6ad-0cce-5c49-8747-66472d122b3b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 57e2ac0b-65c5-5d14-b5d3-ec227f700712
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: dff40321-b2c9-59e7-9611-137bcbddda38
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f8a693c5-cb42-5819-aae7-5d7b075e7e13
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 487534e4-dbd5-5d38-b729-2d3b1b77195c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1cfe716d-5e19-5a09-a2ec-bbb9c7b19c5e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2d81b369-1981-597a-a53a-f6e1c0c21eac
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1b9d528e-ab1e-5e92-9089-7db25c950dd0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f7a07e61-0444-5b65-a5b2-145052515a01
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6299792d-8010-570d-8ded-9a0ae78a9d54
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 39b2d004-a48c-5aef-a0cf-1033494a1082
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e3c7e30c-21ac-5685-ab54-28035f7cd681
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 530c21b0-5914-5a09-957a-c0bbaa722b7d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 93479e55-b406-555e-bf27-5bda4f2ee96f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e43c7c92-e2dd-50f0-adfe-e91cf1211744
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 80f3241c-18d4-5d1d-9877-ec99c4253bc8
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: caee8112-b37f-5f4f-8d52-9956d23fef54
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 798a0812-92c4-5df5-8025-029768ff2ac2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: dcd16a20-9821-5f4f-a195-03852121dc86
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c853290b-11f8-51d7-a570-096c9b431a2d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a2e7efd9-937d-59c2-9ec1-381899cd3334
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 0af52e58-feb0-5165-ab9f-e250e56b0e69
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c029f17e-cb80-5413-8398-cf7bf834194d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4487d5de-ad77-5be0-9874-3b841442a9a1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fd2d96a2-b37f-5339-ab43-8dc02161b89b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d17d49da-59ae-5b8e-90e4-6b8b2365b202
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e80da96e-dad7-53ca-8778-e75661ab215c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 52808b87-efa9-574e-b5c3-1757855763a5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f80b9db1-f32e-5a10-be66-360c669e7962
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b6bd7039-79ac-5af2-b712-6a656c67f93f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b3b1222d-5199-5da8-9eb6-2ffcc3d8f956
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ac64fb3f-2889-579f-8fff-2c4017357909
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 51b18cf1-bc61-5009-a476-36a457c5f275
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 20ea4b9a-4172-5c8d-8bdc-5c6f10d57f80
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 1776c9e6-5860-586f-a36f-e326064c7870
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b182f408-b2d8-5f63-8f65-e28ea50568ce
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f84a8860-b3aa-5154-b94c-b2649bee117d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6ff8f327-b190-592f-8fbb-e28603b1f6f9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: af51c157-399d-5d3f-953d-38cc0260d072
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 064243e2-88f9-5208-b2a9-749c5c294747
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 18e54727-ee7f-5409-a74b-6268e8ea2c46
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f73cbab9-f3bd-5584-b608-ab50b0493d7a
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 08bd9864-0ba4-5c4f-bec4-c16edbee04f1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 18c20ccd-4967-5e6c-99dd-f61c63506112
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7520d457-7a2a-5a42-98fe-361a9a974cf9
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 512f20c5-1f01-5b1c-a485-3d4fdb1f2813
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 0341fda8-97e7-52aa-8afa-f4530fc4b75f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bc0b5f3a-b4b4-5726-b8db-72e6cbdc39d3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 92d66708-6d26-5040-b987-a6e053ddaae3
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bc2630db-6d7d-5b29-845d-3372dc528e1c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 877e5ebf-f95d-580a-a501-335376b05f94
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9fca2b20-8575-5ff8-8898-8fd7b33cfaa1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 81245f2e-4340-5da0-9d73-1c4020e8491e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 916ea7b2-f116-5bab-bd8e-faa415adf5f4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2b1bd788-6a8b-5297-a771-ab12a206b8a1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 26a881c1-2595-5110-bb9a-53cf09192dbf
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b449be61-9d4b-5912-9e78-b48c1fbce1b0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 8a348700-e83e-534d-9607-9598b1d558e5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2dd6a365-218e-5d9c-a311-c50c6328721c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d4e9f18b-e58d-5c7f-a1bd-930dada2ab09
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5609f847-da17-552e-a878-be8c9d7dc8fb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 112bf35a-1682-58e0-9553-fdb88e2c740e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c3ca74b6-1710-5ad8-ae38-3bfd7a2b4979
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 156a1567-253a-5d92-8377-049ee98f1c2d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5228df46-110b-5b2a-8514-8e86957e37b5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b1f59cae-2c54-5db5-99fb-2b60d687c7be
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 98f0908e-99c6-5bd4-8b4f-e5a4c8733ac5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e9a614ee-fc59-5ed4-af2d-082e14592e04
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 18ec0ce9-00a8-5773-93af-49dac8e7a472
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 81d455d3-5587-52d0-88e3-c20e824fd4dd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 36a8d891-23a0-58d4-942d-5d020c9de621
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: cff6cfb9-0690-584a-b53a-c3b580474c44
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bb21ec4e-a7da-5989-b092-278fa483674c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 242a0fbf-8d89-5efd-b906-85598ea19cc5
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 11746bd6-3dfa-54d6-afec-816317ff0b5e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 498e04c7-6488-5aed-b816-f6eb146da488
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: d584da68-1a9b-5885-afc1-cf6d1d6bfd55
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 78c02dc2-49a9-5d84-a762-45fb7b5bd1f2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 78226681-8e38-5b2a-8269-c8604171686d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 501ec864-c4f6-54b7-a5d5-5fff540651e0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b0c48643-920c-5aa3-9afe-6868895b38e7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 66147d3d-1bfc-577a-b7ea-c220120ac0e2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: acb0ad9a-b23b-594c-be34-fa43c38e9ada
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 15b94e15-7b2c-51e4-beab-63bee2630621
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a03acf89-6569-5fc3-9d93-8508c0775c53
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ceb8a562-a8f2-5d14-9483-d1e4958d7c3d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5a550032-277b-59ba-8cab-00801d576e57
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5af0ddd5-3877-5830-a658-bf2e534dadd6
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4982e465-8ba5-5055-810f-484ec766de53
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 091f1312-9c40-5f8f-b066-324f5dd5d357
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b25e5a22-a78f-582d-94ad-b2d816ff390e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 38dcf18f-f194-5f5b-ab59-273c989d07c0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f605fc5b-1f4e-5494-a113-d20f449bdbfc
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b7315133-1e48-5ddb-9a91-016682e42751
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 34d2ee87-fc79-50b5-9fc9-7d85b9dd2464
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7bf09a72-254a-5cef-ae06-7eeeecac57eb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7a2b53c3-f1f6-5a17-b9e7-02f9718c551c
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 3b9f0e98-7ae0-58b0-8188-4c36e4896c7e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a75438be-7b15-5bf9-8601-5d62477ccc3e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 87943a44-8d5b-5840-908d-e1f009f0915d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: cdde7cca-8e4e-5676-a0ed-f81868680361
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7021a92f-ea9a-53ea-b770-c20b3fe0e3f7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 8e5a6509-187b-5c4d-babe-f8644df35228
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: fa035e80-df4d-501a-976d-7b9688d104d7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: db727bde-564d-52f4-b761-830d8a69da0a
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: beac8abe-4b23-5f8d-85e7-949faf054fa8
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: afe3cef3-64fd-5e0b-a274-10574901367e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bf289b30-539d-5ec6-8d33-e23bf441af1d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a1cf9960-209d-5c09-86f7-39edf124ca92
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ccf84a24-04ec-5bca-b79c-10828f3a9f20
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 50cf778c-7e42-5ea2-b57d-e4c281aecf16
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 97408956-2e11-5e12-af01-4a85794cc224
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 00af96ce-631d-5ca8-857b-2c1652d624fe
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7a65307f-10aa-5aed-90c2-b35a95cf358d
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: dba35fbd-2e3f-5e19-ae15-2eadedf6fd2b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 7d9608f0-a9fd-5f41-b04a-46bf6417ffa4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 34002a62-9225-5560-915a-e1c09b6c5896
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: b7176860-fa0f-5126-bf2c-e62c0e8b3aa6
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9a8b7df4-2d80-566b-b1dc-9d00c76e65f2
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9c24b1dd-b2bb-5c4e-a707-573873b54360
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 61f8f7e4-e3d9-5763-a154-ba5680e62910
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2ece61ea-85cb-5683-84f2-5ecefeefc8ff
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 93ef0b44-2d98-58b0-b527-02283eb07750
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: e7ace107-010d-5ce3-9119-5baa710ac22f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6adad7af-8fa2-55d8-a5e4-c0a4c71844bf
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 046d0804-7a38-5dc7-ae0f-13c6112f0908
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2a74b349-8593-5156-9eae-f99a1a81b2a7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: bdda5af1-51de-55b0-b797-7ba092cf71a0
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4edc4860-7599-5bef-9129-2df87cc79f12
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f77cbd0e-43a0-5859-a178-44a007e2051e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c51a1426-95ec-5e05-b6e9-232f8e06f391
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 5acbf350-edf3-5a5b-97d1-4fa374d8c369
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 91990c97-3872-5bf7-a139-9bf5bed632d1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: f23be1de-4e3e-5962-a50b-861cd34371cf
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 59e00b6d-6794-5eb2-a972-c3beefb965dd
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6ef0cf31-3f36-5a90-b4e5-eacdc85e7e31
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c4c542d1-7881-5bc6-881c-be322efaedcb
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: c326e5fe-486e-56bc-b3a9-682b962ed011
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 125bc431-72b2-540d-8900-5606016382b4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2fb35e41-3e43-51eb-a4df-2d5e052f130b
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 391f74b7-c366-5244-9496-c3917d55b347
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: a2c3730a-0da6-5d0a-a865-95a53eefa103
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: eab3187f-e3e2-5cfd-a325-5901cacdb987
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 16536980-dde4-52bc-a63a-79138d16aaa1
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: ae3e07b1-e4fb-5daf-871d-5c938a0f3ee4
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 224eaf16-901d-5d2f-93a3-c99616cac725
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 44535082-1d19-51eb-909d-9ab5030271d7
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: edfeb5db-37a2-5a46-8468-381636eae08f
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 9c753591-2583-51b2-bb3f-5c0ea0647884
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 73d58012-30e2-5823-a309-d20ecbd66b1e
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 34fcc7a3-cfd1-5303-9ebc-06c5c0f3e2c8
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 6598cc32-ab7c-5f25-ae95-908507f2bd28
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 4c74b165-fdcf-5427-95fd-37e350c50437
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 2c295d23-86b1-50c0-8697-9eec174595e6
+[33mWARNING[0m:  [18-04-2024 10:15:56] Delete of nonexisting embedding ID: 8f7053d8-f44b-5e46-862f-a23cb21dfe42
+[32mINFO[0m:     [18-04-2024 10:15:56] 127.0.0.1:48276 - "POST /api/v1/collections/9c0fb18f-89fc-4fb2-8575-90e3a90b7417/delete HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:15:58] 127.0.0.1:48276 - "POST /api/v1/collections/9c0fb18f-89fc-4fb2-8575-90e3a90b7417/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:22:00] 127.0.0.1:35172 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:22:00] 127.0.0.1:35172 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:22:00] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 10:22:00] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 10:22:00] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 10:22:00] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 10:22:00] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 10:22:00] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:22:01] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:22:01] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 10:22:01] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 10:22:01] 127.0.0.1:35186 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:22:01] 127.0.0.1:35186 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:22:01] 127.0.0.1:35186 - "GET /api/v1/collections/69ec2758-3ccf-4d98-bb2f-fefd8d7357d5/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:22:08] 127.0.0.1:42608 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:22:08] 127.0.0.1:42608 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:22:08] 127.0.0.1:42620 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:34:07] 127.0.0.1:41796 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:34:07] 127.0.0.1:41796 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:34:07] 127.0.0.1:41800 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:34:20] 127.0.0.1:41800 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:34:21] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 10:34:21] 127.0.0.1:41800 - "POST /api/v1/collections/69ec2758-3ccf-4d98-bb2f-fefd8d7357d5/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:34:31] 127.0.0.1:45922 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:34:31] 127.0.0.1:45922 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:34:31] 127.0.0.1:45932 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:34:31] 127.0.0.1:45932 - "POST /api/v1/collections/69ec2758-3ccf-4d98-bb2f-fefd8d7357d5/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:35:34] 127.0.0.1:48900 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:35:34] 127.0.0.1:48900 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:35:34] 127.0.0.1:48904 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:36:27] 127.0.0.1:33072 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:36:27] 127.0.0.1:33072 - "POST /api/v1/collections/69ec2758-3ccf-4d98-bb2f-fefd8d7357d5/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:36:27] 127.0.0.1:33072 - "POST /api/v1/collections/69ec2758-3ccf-4d98-bb2f-fefd8d7357d5/delete HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:36:38] 127.0.0.1:50106 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:36:38] 127.0.0.1:50106 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:36:38] 127.0.0.1:50120 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:36:38] 127.0.0.1:50120 - "POST /api/v1/collections/69ec2758-3ccf-4d98-bb2f-fefd8d7357d5/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:37:30] 127.0.0.1:44950 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:37:30] 127.0.0.1:44950 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:37:30] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 10:37:30] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 10:37:30] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 10:37:30] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 10:37:30] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 10:37:30] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:37:31] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:37:31] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 10:37:31] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 10:37:31] 127.0.0.1:44956 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:37:31] 127.0.0.1:44956 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:37:31] 127.0.0.1:44956 - "GET /api/v1/collections/bcc8913c-6a43-4e11-ab22-de23037c361f/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:37:33] 127.0.0.1:44970 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:37:33] 127.0.0.1:44970 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:37:33] 127.0.0.1:44982 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:39:21] 127.0.0.1:42198 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:39:21] 127.0.0.1:42198 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:39:21] 127.0.0.1:42206 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:39:26] 127.0.0.1:42206 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:39:26] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 10:39:26] 127.0.0.1:42206 - "POST /api/v1/collections/bcc8913c-6a43-4e11-ab22-de23037c361f/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:49:06] 127.0.0.1:50852 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:49:06] 127.0.0.1:50852 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 10:49:06] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 10:49:06] 127.0.0.1:50858 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:49:06] 127.0.0.1:50858 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:49:06] 127.0.0.1:50858 - "GET /api/v1/collections/c3942bc8-409a-4808-b979-8eec7e0c2960/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:49:11] 127.0.0.1:50864 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:49:11] 127.0.0.1:50864 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:49:11] 127.0.0.1:50872 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:53:51] 127.0.0.1:59848 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:53:51] 127.0.0.1:59848 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:53:51] 127.0.0.1:59856 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:55:12] 127.0.0.1:56092 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:55:12] 127.0.0.1:56092 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:55:12] 127.0.0.1:56108 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:05] 127.0.0.1:33710 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:05] 127.0.0.1:33710 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:56:05] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 10:56:05] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 10:56:05] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 10:56:05] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 10:56:05] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:56:05] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:56:05] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 10:56:05] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 10:56:05] 127.0.0.1:33718 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:05] 127.0.0.1:33718 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:05] 127.0.0.1:33718 - "GET /api/v1/collections/7b585b2c-f6eb-4482-a85a-b873f6bf83e3/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:21] 127.0.0.1:42582 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:21] 127.0.0.1:42582 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:56:21] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 10:56:21] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 10:56:21] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 10:56:21] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 10:56:21] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:56:21] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 10:56:21] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 10:56:21] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 10:56:21] 127.0.0.1:42586 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:21] 127.0.0.1:42586 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:21] 127.0.0.1:42586 - "GET /api/v1/collections/9081788d-8f4c-4025-8a06-0e73a587f44a/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:43] 127.0.0.1:57920 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:43] 127.0.0.1:57920 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:43] 127.0.0.1:57932 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:56:47] 127.0.0.1:57932 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 10:56:47] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 10:56:47] 127.0.0.1:57932 - "POST /api/v1/collections/9081788d-8f4c-4025-8a06-0e73a587f44a/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:57:16] 127.0.0.1:32852 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:57:16] 127.0.0.1:32852 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:57:16] 127.0.0.1:32854 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:57:20] 127.0.0.1:32854 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:57:21] 127.0.0.1:32854 - "POST /api/v1/collections/9081788d-8f4c-4025-8a06-0e73a587f44a/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 10:57:21] 127.0.0.1:32854 - "POST /api/v1/collections/9081788d-8f4c-4025-8a06-0e73a587f44a/delete HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:19:56] 127.0.0.1:59262 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:19:56] 127.0.0.1:59262 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 11:19:56] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 11:19:56] 127.0.0.1:59278 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:19:56] 127.0.0.1:59278 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:19:56] 127.0.0.1:59278 - "GET /api/v1/collections/c308b12f-0c5d-4177-b4f0-91483d4e57a3/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:20:16] 127.0.0.1:51754 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:20:16] 127.0.0.1:51754 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:20:16] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 11:20:16] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 11:20:16] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 11:20:16] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 11:20:16] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:20:16] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:20:16] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 11:20:16] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 11:20:16] 127.0.0.1:51764 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:20:16] 127.0.0.1:51764 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:20:16] 127.0.0.1:51764 - "GET /api/v1/collections/495e0b47-aaaf-421b-8df2-0a12c46d929b/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:20:21] 127.0.0.1:51770 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:20:21] 127.0.0.1:51770 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:20:21] 127.0.0.1:51784 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:23:43] 127.0.0.1:38546 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:23:43] 127.0.0.1:38546 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:23:43] 127.0.0.1:38556 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:23:46] 127.0.0.1:38556 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:23:46] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 11:23:47] 127.0.0.1:38556 - "POST /api/v1/collections/495e0b47-aaaf-421b-8df2-0a12c46d929b/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:28:49] 127.0.0.1:41346 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:28:49] 127.0.0.1:41346 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:28:49] 127.0.0.1:41358 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:28:52] 127.0.0.1:41358 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:28:52] 127.0.0.1:41358 - "POST /api/v1/collections/495e0b47-aaaf-421b-8df2-0a12c46d929b/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:28:52] 127.0.0.1:41358 - "POST /api/v1/collections/495e0b47-aaaf-421b-8df2-0a12c46d929b/delete HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:29:23] 127.0.0.1:39916 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:29:23] 127.0.0.1:39916 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 11:29:23] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 11:29:23] 127.0.0.1:39918 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:29:23] 127.0.0.1:39918 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:29:24] 127.0.0.1:39918 - "GET /api/v1/collections/6d709ce4-18c7-4bf7-9091-5ffc3431dd3d/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:30:06] 127.0.0.1:55200 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:30:06] 127.0.0.1:55200 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:30:06] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 11:30:06] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 11:30:06] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 11:30:06] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 11:30:06] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:30:07] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:30:07] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 11:30:07] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 11:30:07] 127.0.0.1:55212 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:30:07] 127.0.0.1:55212 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:30:07] 127.0.0.1:55212 - "GET /api/v1/collections/67f081ca-73f4-4ddc-be11-840e14bacf27/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:30:26] 127.0.0.1:34164 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:30:26] 127.0.0.1:34164 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:30:26] 127.0.0.1:34168 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:30:30] 127.0.0.1:34168 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:30:30] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 11:30:30] 127.0.0.1:34168 - "POST /api/v1/collections/67f081ca-73f4-4ddc-be11-840e14bacf27/upsert HTTP/1.1" 200
+[33mWARNING[0m:  [18-04-2024 11:30:30] Delete of nonexisting embedding ID: a2d4a950-d1d8-52ce-b00c-c8c722566a81
+[33mWARNING[0m:  [18-04-2024 11:30:30] Delete of nonexisting embedding ID: 1b383e2e-b3ff-5f1b-8f89-a5964c67aa30
+[33mWARNING[0m:  [18-04-2024 11:30:30] Delete of nonexisting embedding ID: a2d4a950-d1d8-52ce-b00c-c8c722566a81
+[33mWARNING[0m:  [18-04-2024 11:30:30] Delete of nonexisting embedding ID: 1b383e2e-b3ff-5f1b-8f89-a5964c67aa30
+[32mINFO[0m:     [18-04-2024 11:30:30] 127.0.0.1:34168 - "POST /api/v1/collections/67f081ca-73f4-4ddc-be11-840e14bacf27/delete HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:31:55] 127.0.0.1:53898 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:31:55] 127.0.0.1:53898 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 11:31:55] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 11:31:55] 127.0.0.1:53908 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:31:55] 127.0.0.1:53908 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:31:55] 127.0.0.1:53908 - "GET /api/v1/collections/af4cd353-8380-4aea-865e-e3d65257c392/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:32:06] 127.0.0.1:60714 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:32:06] 127.0.0.1:60714 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:32:06] 127.0.0.1:60718 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:33:27] 127.0.0.1:60486 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:33:27] 127.0.0.1:60486 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:33:27] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 11:33:27] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 11:33:27] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 11:33:27] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 11:33:27] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:33:27] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:33:27] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 11:33:27] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 11:33:27] 127.0.0.1:60490 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:33:27] 127.0.0.1:60490 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:33:27] 127.0.0.1:60490 - "GET /api/v1/collections/a0f53275-70be-4494-972d-5b370a7c611a/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:33:36] 127.0.0.1:46476 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:33:36] 127.0.0.1:46476 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:33:36] 127.0.0.1:46490 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:33:40] 127.0.0.1:46490 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:33:40] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 11:33:40] 127.0.0.1:46490 - "POST /api/v1/collections/a0f53275-70be-4494-972d-5b370a7c611a/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:35:03] 127.0.0.1:42186 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:35:03] 127.0.0.1:42186 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 11:35:03] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 11:35:03] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 11:35:03] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 11:35:03] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 11:35:03] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 11:35:03] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:35:04] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 11:35:04] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 11:35:04] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 11:35:04] 127.0.0.1:42198 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:35:04] 127.0.0.1:42198 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:35:04] 127.0.0.1:42198 - "GET /api/v1/collections/7d8739e4-42d5-46b0-898e-c627aa8a9155/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:35:14] 127.0.0.1:33012 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:35:14] 127.0.0.1:33012 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 11:35:14] 127.0.0.1:33028 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:45:57] 127.0.0.1:41858 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:45:57] 127.0.0.1:41858 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:45:57] 127.0.0.1:41870 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:46:33] 127.0.0.1:45484 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:46:33] 127.0.0.1:45484 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:46:33] 127.0.0.1:45492 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:46:33] 127.0.0.1:45492 - "POST /api/v1/collections/7d8739e4-42d5-46b0-898e-c627aa8a9155/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:47:18] 127.0.0.1:34868 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:47:18] 127.0.0.1:34868 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:47:18] 127.0.0.1:34878 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:47:18] 127.0.0.1:34878 - "POST /api/v1/collections/7d8739e4-42d5-46b0-898e-c627aa8a9155/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:47:59] 127.0.0.1:38024 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:47:59] 127.0.0.1:38024 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:47:59] 127.0.0.1:38030 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 12:47:59] 127.0.0.1:38030 - "POST /api/v1/collections/7d8739e4-42d5-46b0-898e-c627aa8a9155/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:20:23] 127.0.0.1:46942 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:20:23] 127.0.0.1:46942 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 13:20:23] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 13:20:23] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 13:20:23] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 13:20:23] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 13:20:23] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 13:20:23] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 13:20:23] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 13:20:23] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 13:20:23] 127.0.0.1:46958 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:20:24] 127.0.0.1:46958 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:20:24] 127.0.0.1:46958 - "GET /api/v1/collections/5eaad5b3-bb6c-4867-bec0-f30dd5e2060d/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:20:30] 127.0.0.1:41936 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:20:30] 127.0.0.1:41936 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:20:30] 127.0.0.1:41952 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:17] 127.0.0.1:41730 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:17] 127.0.0.1:41730 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:17] 127.0.0.1:41744 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:22] 127.0.0.1:41744 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 13:21:22] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 13:21:22] 127.0.0.1:41744 - "POST /api/v1/collections/5eaad5b3-bb6c-4867-bec0-f30dd5e2060d/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:38] 127.0.0.1:55490 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:38] 127.0.0.1:55490 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:38] 127.0.0.1:55498 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:38] 127.0.0.1:55498 - "POST /api/v1/collections/5eaad5b3-bb6c-4867-bec0-f30dd5e2060d/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:41] 127.0.0.1:55510 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:41] 127.0.0.1:55510 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:41] 127.0.0.1:55514 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:41] 127.0.0.1:55514 - "POST /api/v1/collections/5eaad5b3-bb6c-4867-bec0-f30dd5e2060d/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:47] 127.0.0.1:48010 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:47] 127.0.0.1:48010 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:47] 127.0.0.1:48016 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 13:21:47] 127.0.0.1:48016 - "POST /api/v1/collections/5eaad5b3-bb6c-4867-bec0-f30dd5e2060d/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:23:36] 127.0.0.1:45142 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:23:36] 127.0.0.1:45142 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:23:36] 127.0.0.1:45156 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:23:36] 127.0.0.1:45156 - "POST /api/v1/collections/5eaad5b3-bb6c-4867-bec0-f30dd5e2060d/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:23:39] 127.0.0.1:45172 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:23:39] 127.0.0.1:45172 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:23:39] 127.0.0.1:45184 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:23:39] 127.0.0.1:45184 - "POST /api/v1/collections/5eaad5b3-bb6c-4867-bec0-f30dd5e2060d/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:24:17] 127.0.0.1:41694 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:24:17] 127.0.0.1:41694 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:24:17] 127.0.0.1:41706 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:24:17] 127.0.0.1:41706 - "POST /api/v1/collections/5eaad5b3-bb6c-4867-bec0-f30dd5e2060d/get HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:39:07] 127.0.0.1:58576 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:39:07] 127.0.0.1:58576 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 14:39:07] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 14:39:07] 127.0.0.1:58586 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:39:08] 127.0.0.1:58586 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:39:08] 127.0.0.1:58586 - "GET /api/v1/collections/c8a77f58-7693-433c-a9a0-c56c59bc048c/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:39:32] 127.0.0.1:40090 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:39:32] 127.0.0.1:40090 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:39:32] 127.0.0.1:40096 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:40:31] 127.0.0.1:38708 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:40:31] 127.0.0.1:38708 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 14:40:31] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [18-04-2024 14:40:31] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [18-04-2024 14:40:31] Resetting component Posthog
+[36mDEBUG[0m:    [18-04-2024 14:40:31] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [18-04-2024 14:40:31] Starting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 14:40:31] Resetting component SqliteDB
+[36mDEBUG[0m:    [18-04-2024 14:40:31] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [18-04-2024 14:40:31] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [18-04-2024 14:40:31] 127.0.0.1:38714 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:40:31] 127.0.0.1:38714 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:40:31] 127.0.0.1:38714 - "GET /api/v1/collections/30f55772-fb92-400a-8ae4-3c49eb3cbc7b/count HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:40:39] 127.0.0.1:38730 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:40:39] 127.0.0.1:38730 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:40:39] 127.0.0.1:38738 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:40:47] 127.0.0.1:38738 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [18-04-2024 14:40:47] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [18-04-2024 14:40:47] 127.0.0.1:38738 - "POST /api/v1/collections/30f55772-fb92-400a-8ae4-3c49eb3cbc7b/upsert HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:41:09] 127.0.0.1:45060 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:41:09] 127.0.0.1:45060 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:41:09] 127.0.0.1:45068 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [18-04-2024 14:41:09] 127.0.0.1:45068 - "GET /api/v1/collections/30f55772-fb92-400a-8ae4-3c49eb3cbc7b/count HTTP/1.1" 200
