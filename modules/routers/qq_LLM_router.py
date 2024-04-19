@@ -52,3 +52,7 @@ async def answer(request_data: dict):
     
  
     return response
+
+@qq_LLM_router.get("/qq")
+async def LLM():
+    return "llm get"

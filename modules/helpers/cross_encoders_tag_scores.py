@@ -35,7 +35,7 @@ def get_relevant_tags(document: str,threshold_value=1.0):
     max_score = max(scored_tags, key=lambda x: x[0])[0]
     threshold_range = max_score - threshold_value
 
-    # Filter tags that meet the threshold
+    # Filter tags that meet the threshold creating tag name / score object array
     filtered_tags = [{"tag_name": tag['name'], "score": str(score)} for score, tag in scored_tags if score >= threshold_range]
  
     # Sort the list based on scores in descending order (higher scores are better)

@@ -16,7 +16,9 @@ from chromadb.config import Settings
 async def setup_chroma(is_reset=False):
     try:    
     #    chroma db client not langchain for resetting 
+        # chroma_client = chromadb.HttpClient(host='172.208.27.84', port=8000)
         chroma_client = chromadb.HttpClient(host='localhost', port=3001)
+
 
         
         if is_reset:

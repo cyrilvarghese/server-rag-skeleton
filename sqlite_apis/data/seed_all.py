@@ -61,13 +61,13 @@ def main():
             ]
 
     # Sample data for the Tags table
-    tags_data = [
-        ('educational-performance', 'Description for educational-performance', '#6A5ACD'),  # Slate Blue
-        ('compliance-and-improvement', 'Description for compliance-and-improvement', '#20B2AA'),  # Light Sea Green
-        ('data-integrity-and-monitoring', 'Description for data-integrity-and-monitoring', '#3CB371'),  # Medium Sea Green
-        ('parent-and-community-engagement', 'Description for parent-and-community-engagement', '#FFA07A'),  # Light Salmon
-        ('special-education-focus', 'Description for special-education-focus', '#BA55D3')  # Medium Orchid
-    ]
+    tags_data =[
+                ('educational-performance', 'Details the achievements and challenges in educational outcomes, including graduation rates, dropout rates, and performance on statewide assessments.', '#6A5ACD'),  # Slate Blue
+                ('compliance-and-improvement', 'Addresses compliance with educational standards and regulations, alongside targeted improvement strategies for educational services and student support.', '#20B2AA'),  # Light Sea Green
+                ('data-integrity-and-monitoring', 'Focuses on the efforts to enhance the validity and reliability of data reporting within the educational system, including data collection methodologies and analysis.', '#3CB371'),  # Medium Sea Green
+                ('parent-and-community-engagement', 'Highlights the importance of parental and community involvement in the educational process and measures to facilitate such engagement for improved student outcomes.', '#FFA07A'),  # Light Salmon
+                ('special-education-focus', 'Covers initiatives and performance metrics specifically related to special education services, including evaluation timelines, program accessibility, and tailored instructional strategies.', '#BA55D3')  # Medium Orchid
+            ]
     
     # Assuming we have the following structure for 'Roles_Tags' and 'Projects_Tags' junction tables
     # We will randomly associate roles and projects with tags for the sake of this example

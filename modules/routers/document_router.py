@@ -32,11 +32,13 @@ async def get_chunks(req_body: dict):
     return results
 
 def filter_collection_by_metadata(file_name: str):
-    # Placeholder function - replace with your actual logic
-    # Assuming some operation that could raise an error
+  
+   
     print(f"Filtering collection for file: {file_name}")
     file_path= "../server/uploads/"+file_name;
+     # filtering by source
     filtered_collection = get_LC_chroma_client().get(where={"source": file_path})
+     # Adding tags by source
     results = combine_data_with_tags(filtered_collection["ids"],filtered_collection["metadatas"],filtered_collection["documents"],all_tags)
     # Simulate filtering logic
     return results

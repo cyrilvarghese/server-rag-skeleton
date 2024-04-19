@@ -20,7 +20,7 @@ upload_dir = "../server/uploads"
 os.makedirs(upload_dir, exist_ok=True)
 conn=get_db_connection()
 
-def create_job(project_id: int, name: str, description: str, conn):
+def create_job(project_id: int, name: str,conn):
     cursor = conn.cursor()
     cursor.execute("""
         INSERT INTO Jobs (project_id, name, created_at)
@@ -45,11 +45,10 @@ def save_file(file: UploadFile, job_id: int, project_id: int, conn):
 async def create_job_with_files(
     project_id: int = Form(...),
     name: str = Form(...),
-    description: str = Form(...),
     files: List[UploadFile] = File(...) 
 ):
      
-    job_id = create_job(project_id, name, description, conn)
+    job_id = create_job(project_id, name, conn)
     
     for file in files:
         save_file(file, job_id, project_id, conn)
