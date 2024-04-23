@@ -14,6 +14,7 @@ def get_LC_chroma_client():
     chroma_client = chromadb.HttpClient(host='localhost', port=3001)
     embeddings = OpenAIEmbeddings(model= "text-embedding-3-large")
 
+# create a vector store  from client
     langchain_chroma = Chroma(
         client=chroma_client,
         collection_name=DB_NAME,

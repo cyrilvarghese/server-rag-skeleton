@@ -18,9 +18,6 @@ async def setup_chroma(is_reset=False):
     #    chroma db client not langchain for resetting 
         # chroma_client = chromadb.HttpClient(host='172.208.27.84', port=8000)
         chroma_client = chromadb.HttpClient(host='localhost', port=3001)
-
-
-        
         if is_reset:
              print("client Reset ",chroma_client.reset());
         collection = chroma_client.get_or_create_collection(name=DB_NAME)

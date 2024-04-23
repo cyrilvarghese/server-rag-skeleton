@@ -45,12 +45,12 @@ def get_relevant_tags(document: str,threshold_value=1.0):
     return json.dumps(sorted_tag_scores)
 
 
-def get_with_threshold(data, threshold_value=1):
-    max_score = max(data, key=lambda x: x[0])[0]
-    threshold_range = max_score - threshold_value
-    relevant_tag_names = []
-    for score, tag_info in data:
-        if score >= threshold_range:
-            relevant_tag_names.append(tag_info['name'])  # Adjusted for database keys
-    return relevant_tag_names
+# def get_with_threshold(data, threshold_value=1):
+#     max_score = max(data, key=lambda x: x[0])[0]
+#     threshold_range = max_score - threshold_value
+#     relevant_tag_names = []
+#     for score, tag_info in data:
+#         if score >= threshold_range:
+#             relevant_tag_names.append(tag_info['name'])  # Adjusted for database keys
+#     return relevant_tag_names
  

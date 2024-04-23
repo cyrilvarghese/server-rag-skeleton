@@ -42,7 +42,6 @@ def filter_collection_by_metadata(file_name: str):
     results = combine_data_with_tags(filtered_collection["ids"],filtered_collection["metadatas"],filtered_collection["documents"],all_tags)
     # Simulate filtering logic
     return results
-
  
 def parse_tag_names_and_scores(tag_data_str: str) -> List[dict]:
     # Assuming tag_data_str is a JSON string of tag data
@@ -94,6 +93,27 @@ def combine_data_with_tags(ids, metadatas, documents, all_tags):
         })
     
     return combined_results
+
+@document_router.post('/update_metadata')
+async def update_metadata_tags(req_body: dict):
+    try:
+        # Convert these fields into lists if they are not already
+        metadatas =  req_body.get('metadatas')
+        ids =  req_body.get('doc_ids')
+
+        # Get the client and perform the update asynchronously
+        client = get_LC_chroma_client()
+        client._collection.update(ids, metadatas)
+
+        # Return a success message
+        return {"message": "Metadata successfully updated", "updated_ids": ids}
+    except KeyError as e:
+        raise HTTPException(status_code=400, detail=f"Missing required data: {str(e)}")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
+ 
+
+
 
 
 @document_router.get('/')

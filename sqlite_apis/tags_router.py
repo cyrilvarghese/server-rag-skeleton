@@ -42,10 +42,20 @@ def create_tag(tag: Tag):
         except sqlite3.IntegrityError:
             conn.close()
             raise HTTPException(status_code=400, detail=f"Role ID {role_id} does not exist")
-    
+
+    # Associate the tag with a single project
+    if tag.project_id:
+        try:
+            cursor.execute('INSERT INTO Projects_Tags (project_id, tag_id) VALUES (?, ?)',
+                           (tag.project_id, new_tag_id))
+        except sqlite3.IntegrityError:
+            conn.close()
+            raise HTTPException(status_code=400, detail=f"Project ID {tag.project_id} does not exist")
+
     conn.commit()
     conn.close()
     return {**tag.model_dump(), "id": new_tag_id}
+
 
 # Read a single tag by ID
 @tags_router.get("/{tag_id}", response_model=Tag)

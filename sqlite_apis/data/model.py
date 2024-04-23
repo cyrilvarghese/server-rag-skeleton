@@ -10,6 +10,7 @@ class Tag(BaseModel):
     color: Optional[str] = None   
     role_ids: List[int] = [] 
     score: Optional[str] = None
+    project_id: Optional[int] = None   
     class Config:
     # This will exclude default values (e.g., None or empty lists) from the output
         exclude_unset = True
