@@ -8,6 +8,7 @@ from modules.get_retriever import get_retriever  # Adjust the path accordingly
 from modules.cross_encoder_rerank import get_reranked_docs
 from sqlite_apis.data.model import Tag
 from sqlite_apis.tags_router import list_tags
+from  langchain_core.documents.base import Document
 
 load_dotenv()
 document_router = APIRouter()
@@ -96,14 +97,21 @@ def combine_data_with_tags(ids, metadatas, documents, all_tags):
 
 @document_router.post('/update_metadata')
 async def update_metadata_tags(req_body: dict):
-    try:
+    try:    
         # Convert these fields into lists if they are not already
-        metadatas =  req_body.get('metadatas')
-        ids =  req_body.get('doc_ids')
+        docs = list(req_body['docs']) if isinstance(req_body['docs'], (list, tuple)) else [req_body['docs']]
+        ids = list(req_body['doc_ids']) if isinstance(req_body['doc_ids'], (list, tuple)) else [req_body['doc_ids']]
+
+      
 
         # Get the client and perform the update asynchronously
         client = get_LC_chroma_client()
-        client._collection.update(ids, metadatas)
+        # client._collection.update(ids=ids, metadatas=metadatas)
+        LC_docs_list = [];
+        for doc in docs:
+            LC_docs_list.append(Document(page_content=doc['document'],metadata=doc['metadata']))
+        
+        client.update_document(document_id=ids[0], document=LC_docs_list[0])
 
         # Return a success message
         return {"message": "Metadata successfully updated", "updated_ids": ids}
