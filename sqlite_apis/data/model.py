@@ -15,6 +15,10 @@ class Tag(BaseModel):
     # This will exclude default values (e.g., None or empty lists) from the output
         exclude_unset = True
 
+class DocumentTag(BaseModel):
+    doc_id: str = Field(..., example="doc123")
+    tag_ids: List[int] = Field(..., description="List of tag IDs", example=[5, 15, 20])
+
 class Job(BaseModel):
     id: int
     name: str

@@ -73,10 +73,19 @@ tables_creation_sql = [
             FOREIGN KEY (job_id) REFERENCES Jobs(id),
             FOREIGN KEY (project_id) REFERENCES Projects(id)
         );
+    """ ,
+    """
+        CREATE TABLE IF NOT EXISTS Documents_Custom_Tags (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            doc_id TEXT NOT NULL,
+            tag_id INTEGER NOT NULL,
+            UNIQUE (doc_id, tag_id),
+            FOREIGN KEY (tag_id) REFERENCES Tags(id)
+        );
     """
 ]
 # List of table names to clear and seed
-tables = ['Roles', 'Tags', 'Projects', 'Jobs', 'Roles_Tags', 'Projects_Tags','Files']
+tables = ['Roles', 'Tags', 'Projects', 'Jobs', 'Roles_Tags', 'Projects_Tags','Files','Documents_Custom_Tags']
 
 # Clear all data from tables before seeding
 clear_all_data(conn, tables)

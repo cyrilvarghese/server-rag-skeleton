@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import sqlite3
 from typing import Optional,List
 
-from sqlite_apis.data.model import Tag
+from sqlite_apis.data.model import DocumentTag, Tag
 tags_router = APIRouter();
 # Pydantic model to validate data
 
@@ -95,3 +95,62 @@ def delete_tag(tag_id: int):
     conn.close()
     return dict(tag_to_delete)
 
+
+@tags_router.post("/documents-custom-tags/", status_code=201)
+def update_document_tags(document_tag: DocumentTag):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Step 1: Check if any tags exist for the doc_id
+    cursor.execute("SELECT EXISTS(SELECT 1 FROM Documents_Custom_Tags WHERE doc_id = ?)", (document_tag.doc_id,))
+    exists = cursor.fetchone()[0]
+
+    # Step 2: If exists, delete existing tags
+    if exists:
+        cursor.execute("DELETE FROM Documents_Custom_Tags WHERE doc_id = ?", (document_tag.doc_id,))
+        conn.commit()
+
+    # Step 3: Insert the new set of tags
+    if document_tag.tag_ids:
+        cursor.executemany(
+            "INSERT INTO Documents_Custom_Tags (doc_id, tag_id) VALUES (?, ?)", 
+            [(document_tag.doc_id, tag_id) for tag_id in document_tag.tag_ids]
+        )
+        conn.commit()
+        message = f"Updated tags for doc_id {document_tag.doc_id} with {document_tag.tag_ids}"
+    else:
+        message = f"No new tags provided for doc_id {document_tag.doc_id}. Existing tags have been cleared."
+
+    conn.close()
+    return {"message": message}
+
+class TagListResponse(BaseModel):
+    tags: List[Tag]
+ 
+@tags_router.post("/tags/{doc_id}", status_code=201)
+def get_tags_for_document(doc_id: str):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Fetch tag details from Tags table
+    cursor.execute("""
+        SELECT id, name, description, color
+        FROM Tags
+        WHERE id IN (SELECT tag_id FROM Documents_Custom_Tags WHERE doc_id = ?)
+        """, (doc_id,))
+    tags_data = cursor.fetchall()
+
+    tags = []
+    for tag in tags_data:
+        tag_id, name, description, color = tag
+        
+        # Create Tag object
+        tags.append(Tag(
+            id=tag_id,
+            name=name,
+            description=description,
+            color=color
+        ))
+    conn.close()
+
+    return tags
