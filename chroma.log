@@ -10366,3 +10366,570 @@ During handling of the above exception, another exception occurred:
 [32mINFO[0m:     [25-04-2024 22:32:11] 127.0.0.1:44586 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
 [32mINFO[0m:     [25-04-2024 22:32:11] 127.0.0.1:44592 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
 [32mINFO[0m:     [25-04-2024 22:32:11] 127.0.0.1:44592 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[33mWARNING[0m:  [26-04-2024 07:32:09] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048576. chroma_server_nofile will not be set.
+[32mINFO[0m:     [26-04-2024 07:32:09] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [26-04-2024 07:32:09] Starting component System
+[36mDEBUG[0m:    [26-04-2024 07:32:09] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [26-04-2024 07:32:09] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [26-04-2024 07:32:09] Starting component SqliteDB
+[36mDEBUG[0m:    [26-04-2024 07:32:09] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [26-04-2024 07:32:09] Starting component Posthog
+[36mDEBUG[0m:    [26-04-2024 07:32:09] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [26-04-2024 07:32:09] Starting component SegmentAPI
+[32mINFO[0m:     [26-04-2024 07:32:09] Started server process [[36m1377[0m]
+[32mINFO[0m:     [26-04-2024 07:32:09] Waiting for application startup.
+[32mINFO[0m:     [26-04-2024 07:32:09] Application startup complete.
+[32mINFO[0m:     [26-04-2024 07:32:09] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [26-04-2024 07:32:26] 127.0.0.1:41650 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 07:32:26] 127.0.0.1:41650 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 07:32:26] 127.0.0.1:41660 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 07:32:26] 127.0.0.1:41660 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[33mWARNING[0m:  [26-04-2024 07:35:32] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048576. chroma_server_nofile will not be set.
+[32mINFO[0m:     [26-04-2024 07:35:32] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [26-04-2024 07:35:32] Starting component System
+[36mDEBUG[0m:    [26-04-2024 07:35:32] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [26-04-2024 07:35:32] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [26-04-2024 07:35:32] Starting component SqliteDB
+[36mDEBUG[0m:    [26-04-2024 07:35:32] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [26-04-2024 07:35:32] Starting component Posthog
+[36mDEBUG[0m:    [26-04-2024 07:35:32] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [26-04-2024 07:35:32] Starting component SegmentAPI
+[32mINFO[0m:     [26-04-2024 07:35:33] Started server process [[36m3473[0m]
+[32mINFO[0m:     [26-04-2024 07:35:33] Waiting for application startup.
+[32mINFO[0m:     [26-04-2024 07:35:33] Application startup complete.
+[32mINFO[0m:     [26-04-2024 07:35:33] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [26-04-2024 07:35:41] 127.0.0.1:53230 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 07:35:41] 127.0.0.1:53230 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 07:35:41] 127.0.0.1:53234 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 07:35:41] 127.0.0.1:53234 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[33mWARNING[0m:  [26-04-2024 08:51:04] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048576. chroma_server_nofile will not be set.
+[32mINFO[0m:     [26-04-2024 08:51:04] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [26-04-2024 08:51:04] Starting component System
+[36mDEBUG[0m:    [26-04-2024 08:51:04] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [26-04-2024 08:51:04] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [26-04-2024 08:51:04] Starting component SqliteDB
+[36mDEBUG[0m:    [26-04-2024 08:51:04] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [26-04-2024 08:51:04] Starting component Posthog
+[36mDEBUG[0m:    [26-04-2024 08:51:04] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [26-04-2024 08:51:04] Starting component SegmentAPI
+[32mINFO[0m:     [26-04-2024 08:51:04] Started server process [[36m36299[0m]
+[32mINFO[0m:     [26-04-2024 08:51:04] Waiting for application startup.
+[32mINFO[0m:     [26-04-2024 08:51:04] Application startup complete.
+[32mINFO[0m:     [26-04-2024 08:51:04] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [26-04-2024 08:51:38] 127.0.0.1:34352 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 08:51:38] 127.0.0.1:34352 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 08:51:38] 127.0.0.1:34354 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 08:51:38] 127.0.0.1:34354 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[33mWARNING[0m:  [26-04-2024 14:51:47] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048576. chroma_server_nofile will not be set.
+[32mINFO[0m:     [26-04-2024 14:51:47] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [26-04-2024 14:51:47] Starting component System
+[36mDEBUG[0m:    [26-04-2024 14:51:47] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [26-04-2024 14:51:47] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [26-04-2024 14:51:47] Starting component SqliteDB
+[36mDEBUG[0m:    [26-04-2024 14:51:47] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [26-04-2024 14:51:47] Starting component Posthog
+[36mDEBUG[0m:    [26-04-2024 14:51:47] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [26-04-2024 14:51:47] Starting component SegmentAPI
+[32mINFO[0m:     [26-04-2024 14:51:47] Started server process [[36m1201[0m]
+[32mINFO[0m:     [26-04-2024 14:51:47] Waiting for application startup.
+[32mINFO[0m:     [26-04-2024 14:51:47] Application startup complete.
+[32mINFO[0m:     [26-04-2024 14:51:47] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [26-04-2024 14:52:01] 127.0.0.1:50768 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 14:52:01] 127.0.0.1:50768 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 14:52:01] 127.0.0.1:50770 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 14:52:01] 127.0.0.1:50770 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[33mWARNING[0m:  [26-04-2024 17:20:21] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048576. chroma_server_nofile will not be set.
+[32mINFO[0m:     [26-04-2024 17:20:22] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [26-04-2024 17:20:22] Starting component System
+[36mDEBUG[0m:    [26-04-2024 17:20:22] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [26-04-2024 17:20:22] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [26-04-2024 17:20:22] Starting component SqliteDB
+[36mDEBUG[0m:    [26-04-2024 17:20:22] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [26-04-2024 17:20:22] Starting component Posthog
+[36mDEBUG[0m:    [26-04-2024 17:20:22] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [26-04-2024 17:20:22] Starting component SegmentAPI
+[32mINFO[0m:     [26-04-2024 17:20:22] Started server process [[36m1031[0m]
+[32mINFO[0m:     [26-04-2024 17:20:22] Waiting for application startup.
+[32mINFO[0m:     [26-04-2024 17:20:22] Application startup complete.
+[32mINFO[0m:     [26-04-2024 17:20:22] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [26-04-2024 17:20:32] 127.0.0.1:37528 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 17:20:32] 127.0.0.1:37528 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 17:20:32] 127.0.0.1:37542 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 17:20:32] 127.0.0.1:37542 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:14:07] 127.0.0.1:42856 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:14:07] 127.0.0.1:42856 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:14:07] 127.0.0.1:42870 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:14:07] 127.0.0.1:42870 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:14:55] 127.0.0.1:60842 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:14:55] 127.0.0.1:60842 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:14:55] 127.0.0.1:60844 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:14:55] 127.0.0.1:60844 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:18:55] 127.0.0.1:48308 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:18:55] 127.0.0.1:48308 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:18:55] 127.0.0.1:48316 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:18:55] 127.0.0.1:48316 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:19:04] 127.0.0.1:48332 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:19:04] 127.0.0.1:48332 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:19:04] 127.0.0.1:48338 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-04-2024 18:19:04] 127.0.0.1:48338 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[33mWARNING[0m:  [27-04-2024 10:38:13] chroma_server_nofile is set to 65535, but this is less than current soft limit of 1048576. chroma_server_nofile will not be set.
+[32mINFO[0m:     [27-04-2024 10:38:13] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [27-04-2024 10:38:13] Starting component System
+[36mDEBUG[0m:    [27-04-2024 10:38:13] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [27-04-2024 10:38:13] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [27-04-2024 10:38:13] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 10:38:13] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [27-04-2024 10:38:13] Starting component Posthog
+[36mDEBUG[0m:    [27-04-2024 10:38:13] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2024 10:38:13] Starting component SegmentAPI
+[32mINFO[0m:     [27-04-2024 10:38:13] Started server process [[36m1611[0m]
+[32mINFO[0m:     [27-04-2024 10:38:13] Waiting for application startup.
+[32mINFO[0m:     [27-04-2024 10:38:13] Application startup complete.
+[32mINFO[0m:     [27-04-2024 10:38:13] Uvicorn running on [1mhttp://localhost:3001[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [27-04-2024 10:38:26] 127.0.0.1:59344 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 10:38:26] 127.0.0.1:59344 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 10:38:26] 127.0.0.1:59348 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 10:38:26] 127.0.0.1:59348 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 10:43:07] 127.0.0.1:45494 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 10:43:07] 127.0.0.1:45494 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 10:43:07] 127.0.0.1:45506 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 10:43:07] 127.0.0.1:45506 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:23:05] 127.0.0.1:38750 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:23:05] 127.0.0.1:38750 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:23:05] 127.0.0.1:38760 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:23:05] 127.0.0.1:38760 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:24:34] 127.0.0.1:37916 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:24:34] 127.0.0.1:37916 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:24:34] 127.0.0.1:37928 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:24:34] 127.0.0.1:37928 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:43] 127.0.0.1:46620 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:43] 127.0.0.1:46620 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:43] 127.0.0.1:46624 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:48] 127.0.0.1:46624 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 11:25:48] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [27-04-2024 11:25:48] 127.0.0.1:46624 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/upsert HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49592 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49592 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49608 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49608 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49616 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49616 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49628 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49628 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49636 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49636 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49638 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49638 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49648 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49648 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49650 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:25:53] 127.0.0.1:49650 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:18] 127.0.0.1:55956 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:18] 127.0.0.1:55956 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:18] 127.0.0.1:55972 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:19] 127.0.0.1:55972 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:19] 127.0.0.1:55972 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/update HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:19] 127.0.0.1:55988 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:19] 127.0.0.1:55988 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:19] 127.0.0.1:55992 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:19] 127.0.0.1:55992 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:28] 127.0.0.1:45856 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:28] 127.0.0.1:45856 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:28] 127.0.0.1:45870 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:29] 127.0.0.1:45870 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:29] 127.0.0.1:45870 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/update HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:29] 127.0.0.1:45874 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:29] 127.0.0.1:45874 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:29] 127.0.0.1:45878 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:29] 127.0.0.1:45878 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:43] 127.0.0.1:36980 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:43] 127.0.0.1:36980 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:43] 127.0.0.1:36992 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:44] 127.0.0.1:36992 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:44] 127.0.0.1:36992 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/update HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:44] 127.0.0.1:37002 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:44] 127.0.0.1:37002 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:44] 127.0.0.1:37012 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:26:44] 127.0.0.1:37012 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:27:42] 127.0.0.1:49734 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:27:42] 127.0.0.1:49734 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:27:42] 127.0.0.1:49744 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:27:42] 127.0.0.1:49744 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:28:01] 127.0.0.1:55756 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:28:01] 127.0.0.1:55756 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:28:01] 127.0.0.1:55762 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:28:01] 127.0.0.1:55762 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:28:49] 127.0.0.1:44612 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:28:49] 127.0.0.1:44612 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:28:49] 127.0.0.1:44624 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:28:49] 127.0.0.1:44624 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:29:56] 127.0.0.1:45564 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:29:56] 127.0.0.1:45564 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:29:56] 127.0.0.1:45580 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:29:56] 127.0.0.1:45580 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:33:25] 127.0.0.1:45068 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:33:25] 127.0.0.1:45068 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:33:25] 127.0.0.1:45070 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:33:25] 127.0.0.1:45070 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:33:32] 127.0.0.1:49514 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:33:32] 127.0.0.1:49514 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:33:32] 127.0.0.1:49516 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:33:32] 127.0.0.1:49516 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:35:02] 127.0.0.1:53000 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:35:02] 127.0.0.1:53000 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:35:02] 127.0.0.1:53014 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:35:02] 127.0.0.1:53014 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:39:48] 127.0.0.1:50546 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:39:48] 127.0.0.1:50546 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:39:48] 127.0.0.1:50562 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:39:48] 127.0.0.1:50562 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:39:55] 127.0.0.1:58594 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:39:55] 127.0.0.1:58594 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:39:55] 127.0.0.1:58604 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:39:55] 127.0.0.1:58604 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:40:16] 127.0.0.1:47244 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:40:16] 127.0.0.1:47244 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:40:16] 127.0.0.1:47254 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:40:16] 127.0.0.1:47254 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:45:26] 127.0.0.1:51224 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:45:26] 127.0.0.1:51224 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:45:26] 127.0.0.1:51240 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:45:26] 127.0.0.1:51240 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:47:43] 127.0.0.1:48352 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:47:43] 127.0.0.1:48352 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:47:43] 127.0.0.1:48360 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:47:43] 127.0.0.1:48360 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:47:54] 127.0.0.1:33530 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:47:54] 127.0.0.1:33530 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:47:54] 127.0.0.1:33540 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:47:54] 127.0.0.1:33540 - "GET /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:48:27] 127.0.0.1:43024 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:48:27] 127.0.0.1:43024 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:48:27] 127.0.0.1:43038 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:48:29] 127.0.0.1:43038 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:48:29] 127.0.0.1:43038 - "POST /api/v1/collections/511f0dcf-4284-4953-94d6-7caae2106d20/upsert HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:03] 127.0.0.1:35914 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:03] 127.0.0.1:35914 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Resetting component Posthog
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Resetting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [27-04-2024 11:50:03] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [27-04-2024 11:50:03] 127.0.0.1:35918 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:03] 127.0.0.1:35918 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:03] 127.0.0.1:35918 - "GET /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:10] 127.0.0.1:35932 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:10] 127.0.0.1:35932 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:10] 127.0.0.1:35944 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:12] 127.0.0.1:35944 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 11:50:12] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [27-04-2024 11:50:12] 127.0.0.1:35944 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/upsert HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:43] 127.0.0.1:56378 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:43] 127.0.0.1:56378 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:43] 127.0.0.1:56386 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:57] 127.0.0.1:52164 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:57] 127.0.0.1:52164 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:57] 127.0.0.1:52170 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:50:57] 127.0.0.1:52170 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:10] 127.0.0.1:54438 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:10] 127.0.0.1:54438 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:10] 127.0.0.1:54452 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:11] 127.0.0.1:54452 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:11] 127.0.0.1:54452 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/update HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:11] 127.0.0.1:54462 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:11] 127.0.0.1:54462 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:11] 127.0.0.1:54470 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:11] 127.0.0.1:54470 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:30] 127.0.0.1:55470 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:30] 127.0.0.1:55470 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:31] 127.0.0.1:55484 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:51:31] 127.0.0.1:55484 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:37] 127.0.0.1:50496 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:37] 127.0.0.1:50496 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:37] 127.0.0.1:50506 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:38] 127.0.0.1:50506 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:38] 127.0.0.1:50506 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/update HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:38] 127.0.0.1:50518 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:38] 127.0.0.1:50518 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:38] 127.0.0.1:50522 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:38] 127.0.0.1:50522 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:41] 127.0.0.1:57272 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:41] 127.0.0.1:57272 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:41] 127.0.0.1:57274 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 11:53:41] 127.0.0.1:57274 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:18] 127.0.0.1:51686 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:18] 127.0.0.1:51686 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:18] 127.0.0.1:51692 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:18] 127.0.0.1:51692 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58448 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58448 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58450 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58450 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58462 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58462 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58470 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58470 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58484 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58484 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58496 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:45] 127.0.0.1:58496 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58500 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58500 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58514 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58514 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58520 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58520 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58528 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58528 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58544 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:46] 127.0.0.1:58544 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58546 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58546 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58552 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58552 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58562 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58562 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58572 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58572 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58588 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58588 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58602 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58602 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58612 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58612 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58616 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58616 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58630 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58630 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58646 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58646 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58656 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58656 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58664 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58664 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58668 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58668 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58678 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58678 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58686 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58686 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58702 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:47] 127.0.0.1:58702 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58708 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58708 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58724 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58724 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58740 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58740 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58746 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58746 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58754 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58754 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58758 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58758 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58764 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58764 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58772 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58772 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58782 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58782 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58786 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58786 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58798 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58798 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58804 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58804 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58816 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58816 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58818 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58818 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58832 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:48] 127.0.0.1:58832 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:54] 127.0.0.1:33780 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:54] 127.0.0.1:33780 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:54] 127.0.0.1:33784 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:36:54] 127.0.0.1:33784 - "POST /api/v1/collections/643e4940-6210-4f54-b290-dd941ae881b4/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:07] 127.0.0.1:39742 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:07] 127.0.0.1:39742 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Resetting component Posthog
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Resetting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [27-04-2024 16:45:07] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [27-04-2024 16:45:07] 127.0.0.1:39744 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:07] 127.0.0.1:39744 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:07] 127.0.0.1:39744 - "GET /api/v1/collections/53e39774-54fe-49b7-ad22-fbd8d5ab38f1/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:15] 127.0.0.1:53272 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:15] 127.0.0.1:53272 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:15] 127.0.0.1:53288 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:17] 127.0.0.1:53288 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 16:45:17] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [27-04-2024 16:45:17] 127.0.0.1:53288 - "POST /api/v1/collections/53e39774-54fe-49b7-ad22-fbd8d5ab38f1/upsert HTTP/1.1" 200
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: 54233975-261e-50c7-b82a-bdc37450c8ff
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: 21914245-efeb-5fb0-ad0f-b80ef92443de
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: ef229c81-d1c5-53c7-8860-c4a65810b157
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: a8b9d004-74f2-5a2d-9354-b8af872209b5
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: d6aa26d8-a718-5e37-be88-944136127d92
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: da44f256-9806-5b38-a2bd-c28f319a2fdc
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: 427cffdb-aeb1-5907-ab60-a67c4f9a2ed0
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: 54233975-261e-50c7-b82a-bdc37450c8ff
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: 21914245-efeb-5fb0-ad0f-b80ef92443de
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: ef229c81-d1c5-53c7-8860-c4a65810b157
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: a8b9d004-74f2-5a2d-9354-b8af872209b5
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: d6aa26d8-a718-5e37-be88-944136127d92
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: da44f256-9806-5b38-a2bd-c28f319a2fdc
+[33mWARNING[0m:  [27-04-2024 16:45:17] Delete of nonexisting embedding ID: 427cffdb-aeb1-5907-ab60-a67c4f9a2ed0
+[32mINFO[0m:     [27-04-2024 16:45:17] 127.0.0.1:53288 - "POST /api/v1/collections/53e39774-54fe-49b7-ad22-fbd8d5ab38f1/delete HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:29] 127.0.0.1:49558 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:29] 127.0.0.1:49558 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 16:45:29] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [27-04-2024 16:45:29] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [27-04-2024 16:45:29] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2024 16:45:29] Resetting component Posthog
+[36mDEBUG[0m:    [27-04-2024 16:45:29] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [27-04-2024 16:45:29] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 16:45:30] Resetting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 16:45:30] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [27-04-2024 16:45:30] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [27-04-2024 16:45:30] 127.0.0.1:49570 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:30] 127.0.0.1:49570 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:30] 127.0.0.1:49570 - "GET /api/v1/collections/a68f06d0-8f8a-435d-9b93-e63c96452f79/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:38] 127.0.0.1:55456 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:38] 127.0.0.1:55456 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:45:38] 127.0.0.1:55472 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:46:09] 127.0.0.1:51170 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:46:09] 127.0.0.1:51170 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 16:46:09] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [27-04-2024 16:46:09] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2024 16:46:09] Resetting component Posthog
+[36mDEBUG[0m:    [27-04-2024 16:46:09] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [27-04-2024 16:46:09] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 16:46:10] Resetting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 16:46:10] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [27-04-2024 16:46:10] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [27-04-2024 16:46:10] 127.0.0.1:51180 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:46:10] 127.0.0.1:51180 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:46:10] 127.0.0.1:51180 - "GET /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:46:17] 127.0.0.1:56628 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:46:17] 127.0.0.1:56628 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:46:17] 127.0.0.1:56638 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34738 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34738 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34746 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34746 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34756 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34756 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34762 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34762 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34772 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34772 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34776 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:31] 127.0.0.1:34776 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36594 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36594 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36608 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36608 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36610 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36610 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36616 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36616 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36624 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36624 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36628 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:55:52] 127.0.0.1:36628 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44794 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44794 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44796 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44796 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44808 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44808 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44818 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44818 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44832 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44832 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44834 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44834 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44850 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44850 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44854 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44854 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44870 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44870 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44882 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44882 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44890 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44890 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44900 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:56:07] 127.0.0.1:44900 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:57:26] 127.0.0.1:39086 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:57:26] 127.0.0.1:39086 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:57:26] 127.0.0.1:39096 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:57:26] 127.0.0.1:39096 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:57:26] 127.0.0.1:39104 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:57:26] 127.0.0.1:39104 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:57:26] 127.0.0.1:39112 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 16:57:26] 127.0.0.1:39112 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:10:27] 127.0.0.1:48796 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:10:27] 127.0.0.1:48796 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:10:27] 127.0.0.1:48804 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:10:27] 127.0.0.1:48804 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 17:10:28] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [27-04-2024 17:10:28] 127.0.0.1:48804 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/query HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:43] 127.0.0.1:50704 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:43] 127.0.0.1:50704 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:43] 127.0.0.1:50710 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:43] 127.0.0.1:50710 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:43] 127.0.0.1:50720 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:43] 127.0.0.1:50720 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:43] 127.0.0.1:50734 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:43] 127.0.0.1:50734 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:46] 127.0.0.1:50746 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:46] 127.0.0.1:50746 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:46] 127.0.0.1:50756 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:46] 127.0.0.1:50756 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:46] 127.0.0.1:50760 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:46] 127.0.0.1:50760 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:46] 127.0.0.1:50770 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:11:46] 127.0.0.1:50770 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58314 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58314 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58328 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58328 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58338 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58338 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58348 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58348 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58354 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58354 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58360 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58360 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58364 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58364 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58366 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:51] 127.0.0.1:58366 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:55] 127.0.0.1:58382 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:55] 127.0.0.1:58382 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:55] 127.0.0.1:58384 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:12:55] 127.0.0.1:58384 - "POST /api/v1/collections/9cca410a-9727-4833-9bbd-a3eb8e9813cf/get HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:28:29] 127.0.0.1:58726 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:28:29] 127.0.0.1:58726 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 17:28:29] Resetting component SqliteMetadataSegment
+[36mDEBUG[0m:    [27-04-2024 17:28:29] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [27-04-2024 17:28:29] Resetting component LocalSegmentManager
+[36mDEBUG[0m:    [27-04-2024 17:28:29] Resetting component Posthog
+[36mDEBUG[0m:    [27-04-2024 17:28:29] Resetting component QuotaEnforcer
+[36mDEBUG[0m:    [27-04-2024 17:28:29] Starting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 17:28:30] Resetting component SqliteDB
+[36mDEBUG[0m:    [27-04-2024 17:28:30] Resetting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [27-04-2024 17:28:30] Resetting component OpenTelemetryClient
+[32mINFO[0m:     [27-04-2024 17:28:30] 127.0.0.1:58728 - "POST /api/v1/reset HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:28:30] 127.0.0.1:58728 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:28:30] 127.0.0.1:58728 - "GET /api/v1/collections/01b24450-ccc4-4157-b66b-d1bd04fe593c/count HTTP/1.1" 200

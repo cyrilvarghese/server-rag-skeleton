@@ -17,11 +17,11 @@ def get_relevant_tags(document: str,threshold_value=1.0):
         # Access the tag_name and tag_description for each tag
         tag_name = tag['name']
         tag_description = tag['description']
-        print(f"Tag Name: {tag_name}\nDescription: {tag_description}\n")
+        # print(f"Tag Name: {tag_name}\nDescription: {tag_description}\n")
 
         pairs.append([tag_description, document])
 
-    # Score pairs of tag description and document
+      # Score pairs of tag description and document
     scores = cross_encoder.predict(pairs)
 
     # Print scores with URL source for verification
@@ -30,19 +30,19 @@ def get_relevant_tags(document: str,threshold_value=1.0):
 
     # Combine the scores with the corresponding tags
     scored_tags = list(zip(scores, tags))
-    
-    # Calculate the maximum score to set up a threshold
-    max_score = max(scored_tags, key=lambda x: x[0])[0]
-    threshold_range = max_score - threshold_value
 
-    # Filter tags that meet the threshold creating tag name / score object array
-    filtered_tags = [{"tag_name": tag['name'], "score": str(score)} for score, tag in scored_tags if score >= threshold_range]
- 
     # Sort the list based on scores in descending order (higher scores are better)
-    sorted_tag_scores = sorted(filtered_tags, key=lambda x: float(x["score"]), reverse=True)
-    print(sorted_tag_scores)
+    sorted_tag_scores = sorted(scored_tags, key=lambda x: x[0], reverse=True)
 
-    return json.dumps(sorted_tag_scores)
+    # Get the top three tags
+    top_three_tags = sorted_tag_scores[:3]
+
+    # Convert top three tags into a list of dictionaries with tag name and score
+    top_three_tags_formatted = [{"tag_name": tag['name'], "score": str(score)} for score, tag in top_three_tags]
+    print(top_three_tags_formatted)
+
+    # Assuming the output needs to be in JSON format
+    return json.dumps(top_three_tags_formatted)
 
 
 # def get_with_threshold(data, threshold_value=1):
