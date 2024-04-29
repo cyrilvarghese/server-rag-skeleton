@@ -27,7 +27,7 @@ app.mount("/uploads", StaticFiles(directory="../server/uploads"), name="static")
 # Define a startup event handler to call setup_chroma asynchronously
 @app.on_event("startup")
 async def startup_event():
-    await chroma_setup.setup_chroma(is_reset=True)
+    await chroma_setup.setup_chroma(is_reset=False)
 
 # Include routers for different endpoints
 app.include_router(query_router, prefix="/api/query")

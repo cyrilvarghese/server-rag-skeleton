@@ -152,7 +152,7 @@ def get_files_by_project(project_id: int):
     cursor = conn.cursor()
     
     cursor.execute("""
-        SELECT id, name, created_at FROM Files WHERE project_id = ? ORDER BY created_at
+        SELECT id, name, created_at FROM Files WHERE project_id = ? ORDER BY created_at DESC
     """, (project_id,))
     
     files_rows = cursor.fetchall()
