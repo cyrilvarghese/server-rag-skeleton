@@ -10933,3 +10933,24 @@ During handling of the above exception, another exception occurred:
 [32mINFO[0m:     [27-04-2024 17:28:30] 127.0.0.1:58728 - "POST /api/v1/reset HTTP/1.1" 200
 [32mINFO[0m:     [27-04-2024 17:28:30] 127.0.0.1:58728 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
 [32mINFO[0m:     [27-04-2024 17:28:30] 127.0.0.1:58728 - "GET /api/v1/collections/01b24450-ccc4-4157-b66b-d1bd04fe593c/count HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:28:37] 127.0.0.1:56768 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:28:37] 127.0.0.1:56768 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:28:37] 127.0.0.1:56784 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-04-2024 17:28:39] 127.0.0.1:56784 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [27-04-2024 17:28:39] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [27-04-2024 17:28:39] 127.0.0.1:56784 - "POST /api/v1/collections/01b24450-ccc4-4157-b66b-d1bd04fe593c/upsert HTTP/1.1" 200
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: b5441472-970b-57e7-b1e1-bc6c4f91a136
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: 07dc3223-9bce-5bde-b28f-598ce72cbe6d
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: 62bb8399-cedd-537b-af2e-b788ffe1b69c
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: 77d38ad0-599a-5787-ae16-22e70ced2ca1
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: a237f2c5-9848-592a-a63b-f0d21602b348
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: eb932bc5-0474-597e-9176-3b0e5cc2d3f2
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: e1b38706-ee71-5bb1-b0bf-f81558b79459
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: b5441472-970b-57e7-b1e1-bc6c4f91a136
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: 07dc3223-9bce-5bde-b28f-598ce72cbe6d
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: 62bb8399-cedd-537b-af2e-b788ffe1b69c
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: 77d38ad0-599a-5787-ae16-22e70ced2ca1
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: a237f2c5-9848-592a-a63b-f0d21602b348
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: eb932bc5-0474-597e-9176-3b0e5cc2d3f2
+[33mWARNING[0m:  [27-04-2024 17:28:39] Delete of nonexisting embedding ID: e1b38706-ee71-5bb1-b0bf-f81558b79459
+[32mINFO[0m:     [27-04-2024 17:28:39] 127.0.0.1:56784 - "POST /api/v1/collections/01b24450-ccc4-4157-b66b-d1bd04fe593c/delete HTTP/1.1" 200
